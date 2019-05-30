@@ -37,9 +37,9 @@
 ### DataBase Structure:
 
 ####price_db.product_cat
-| id   | vendor  | name  | last_update  |
-| -------- | -------- | -------- | -------- | 
-| cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­ |  
+| id   | vendor  | name  | last_update  | link  |
+| -------- | -------- | -------- | -------- | -------- |  
+| cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­ | cell 5  ­ ­ ­ ­ |    
 ####price_db.price_history
 | id   | vendor  | name  | price  | time  | image  | 
 | -------- | -------- | -------- | -------- | -------- | -------- | 

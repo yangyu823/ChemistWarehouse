@@ -41,10 +41,12 @@ def get_data(url):
 
     if "chemistwarehouse" in url:
         product_vendor = 'ChemistWarehouse'
+    elif "mychemist" in url:
+        product_vendor = 'MyChemist'
     else:
         product_vendor = 'Unknow'
 
-    print(product_vendor)
+    print(product_name)
 
 
 if __name__ == '__main__':
