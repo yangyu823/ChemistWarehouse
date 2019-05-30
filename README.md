@@ -1,18 +1,19 @@
 #   PriceTrackingHouse
 
-- [ ]   Project No.1    ChemistWarehouse
+- [ ]   _Project No.1    ChemistWarehouse_
+    - [ ]   Stage Zero  (Preparation & Design)
 
-    - [ ]   Stage One (Basic functionality)
+    - [ ]   Stage One   (Basic functionality)
     
         - [ ] Database Design & Setup
         - [ ] Check Individual Product price
-        - [ ] Store Product price into DB with timestamp
+        - [ ] Store Product Info into DB with timestamp
         - [ ] Separate API to check Price base on request link
     
-    - [ ]   Stage Two (Website and Database host on cloud)
+    - [ ]   Stage Two   (Website and Database host on cloud)
     
         - [ ] Heroku Database setup
-        - [ ] Basic frontend portal
+        - [ ] Basic Frontend portal
         
             - [ ] Design phase
             
@@ -23,6 +24,8 @@
         - [ ] Price Check mechanism automation(Daily Price Check)
         - [ ] 
         
-    - [ ]   Stage Four (Front-end Polish and D3js)
+    - [ ]   Stage Four  (Front-end Polish and D3js)
 
-- [ ]   Project No.2    Formula Price Addon
+
+- [ ]   _Project No.2    Formula Price Add-on_
+    - [ ]   To be continue
