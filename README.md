@@ -1,33 +1,31 @@
 #   PriceTrackingHouse
 
-- [ ]   **Project No.1    ChemistWarehouse**
+- [ ]   __No.1    ChemistWarehouse__
     - [x]   Stage Zero  (Preparation & Design)
 
-    - [ ]   Stage One   (Basic functionality)
+    - [ ]   Stage One   (Basic back-end functionality)
     
         - [x] Database Design & Setup
         - [ ] Check Individual Product price
         - [ ] Store Product Info into DB with timestamp
-        - [ ] Separate API to check Price base on request link
     
-    - [ ]   Stage Two   (Website and Database host on cloud)
-    
+    - [ ]   Stage Two   (Basic API functionality)
+        - [ ] Flask(lib) setup for API back-end
+        - [ ] API single function with request link
+            - [ ] Return product price history
+    - [ ]   Stage Three   (Website and Database host on cloud)
         - [ ] Heroku Database setup
         - [ ] Basic Frontend portal
-        
             - [ ] Design phase
-            
         - [ ] Travis CI integration and auto deploy to Heroku
         
-    - [ ]   Stage Three (Back-end Polish and Automation)
+    - [ ]   Stage Four (Back-end Polish and Automation)
     
         - [ ] Price Check mechanism automation(Daily Price Check)
         - [ ] To be continue
         
-    - [ ]   Stage Four  (Front-end Polish and D3js)
-
-
-- [ ]   __Project No.2    Formula Price Add-on__
+    - [ ]   Stage Five  (Front-end Polish and D3js)
+- [ ]   __No.2    Formula Price Add-on__
     - [ ]   To be continue
 
 
@@ -36,11 +34,14 @@
 
 ### DataBase Structure:
 
-####price_db.product_cat
+###price_db.product_cat
+
 | id   | vendor  | name  | last_update  | link  |
 | -------- | -------- | -------- | -------- | -------- |  
 | cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­ | cell 5  ­ ­ ­ ­ |    
-####price_db.price_history
+
+###price_db.price_history
+
 | id   | vendor  | name  | price  | time  | image  | 
 | -------- | -------- | -------- | -------- | -------- | -------- | 
 | cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­  | cell 5  ­ ­ ­ ­  | cell 6  ­ ­ ­ ­  | 
