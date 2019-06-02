@@ -11,8 +11,11 @@
     
     - [ ]   Stage Two   (Basic API functionality)
         - [ ] Flask(lib) setup for API back-end
-        - [ ] API single function with request link
-            - [ ] Return product price history
+        - [ ] `[API_1]` single function with request link
+            - [ ] 1.Link check to decide which website it is
+            - [ ] 2.Search from database to decide output
+            - [ ] 3.Return product basic information
+            - [ ] 4.Return history product price dataset
     - [ ]   Stage Three   (Website and Database host on cloud)
         - [ ] Heroku Database setup
         - [ ] Basic Frontend portal
@@ -22,10 +25,16 @@
     - [ ]   Stage Four (Back-end Polish and Automation)
     
         - [ ] Price Check mechanism automation(Daily Price Check)
-        - [ ] To be continue
+        - [ ] `[API_2]` for History low price
+        - [ ] `[API_1]` Price dataset from All vendor
         
     - [ ]   Stage Five  (Front-end Polish and D3js)
-- [ ]   __No.2    Formula Price Add-on__
+        - [ ] Line graph to demo the price history
+        - [ ] Front-end the product page
+- [ ]   __No.2    Other website Price Add-on__
+    - [ ]   Supplements website (Eg.MyChemist,PriceLine etc)
+    - [ ]   Makeup website
+    - [ ]   Supermarket (Eg.Coles, WoolWorth etc)
     - [ ]   To be continue
 
 
