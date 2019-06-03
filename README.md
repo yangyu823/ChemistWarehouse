@@ -47,13 +47,13 @@
 
 | id   | vendor  | name  | last_update  | link  |
 | -------- | -------- | -------- | -------- | -------- |  
-| cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­ | cell 5  ­ ­ ­ ­ |    
+| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ |    
 
 ###price_db.price_history
 
-| id   | vendor  | name  | price  | time  | image  | 
+| id   | vendor  | name  | price  | date  | image  | 
 | -------- | -------- | -------- | -------- | -------- | -------- | 
-| cell 1  ­ ­ ­ ­  | cell 2  ­ ­ ­ ­ ­  | cell 3  ­ ­ ­ ­  | cell 4  ­ ­ ­ ­  | cell 5  ­ ­ ­ ­  | cell 6  ­ ­ ­ ­  | 
+| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DOUBLE  ­ ­ ­ ­  | DATE  ­ ­ ­ ­  | LONGBLOB  ­ ­ ­ ­  | 
 
 `imgae store as BLOB(binary). This is for price record evidence`
 
