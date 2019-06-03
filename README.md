@@ -45,9 +45,9 @@
 
 ###price_db.product_cat
 
-| id   | vendor  | name  | last_update  | link  |
-| -------- | -------- | -------- | -------- | -------- |  
-| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ |    
+| id   | vendor  | name  | last_update  | link  | link_number  |
+| -------- | -------- | -------- | -------- | -------- | -------- |   
+| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ | INT  ­ ­ ­ ­ | 
 
 ###price_db.price_history
 
