@@ -80,12 +80,13 @@ def get_data(url):
 
         #   Insert Into Databse
         insert_db(product_id, product_vendor, product_name, product_price, product_img, capture_time)
+        return True
 
 
 if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65960'
-    link = 'https://www.chemistwarehouse.com.au/buy/65962'
+    link = 'https://www.chemistwarehouse.com.au/buy/65960'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65962'
     if get_data(link) is None:
         print("Product not found")
     else:
-        print("WTF")
+        print("Product found")
