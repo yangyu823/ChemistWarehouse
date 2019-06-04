@@ -45,15 +45,15 @@
 
 ###price_db.product_cat
 
-| id   | vendor  | name  | last_update  | link  | link_number  |
-| -------- | -------- | -------- | -------- | -------- | -------- |   
-| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ | INT  ­ ­ ­ ­ | 
+| id   | product-id   | vendor  | name  | last_update  | link  | link_number  |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |   
+| INT  ­ ­ ­ ­  | INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ | INT  ­ ­ ­ ­ | 
 
-###price_db.price_history
+###price_db.product_history
 
-| id   | vendor  | name  | price  | date  | image  | 
-| -------- | -------- | -------- | -------- | -------- | -------- | 
-| INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DOUBLE  ­ ­ ­ ­  | DATE  ­ ­ ­ ­  | LONGBLOB  ­ ­ ­ ­  | 
+| id   | product-id   | vendor  | name  | price  | date  | image  | 
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | 
+| INT  ­ ­ ­ ­  | INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DOUBLE  ­ ­ ­ ­  | DATE  ­ ­ ­ ­  | LONGBLOB  ­ ­ ­ ­  | 
 
 `imgae store as BLOB(binary). This is for price record evidence`
 
