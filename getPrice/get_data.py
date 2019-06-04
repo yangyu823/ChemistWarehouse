@@ -74,22 +74,22 @@ def check_db(link_id):
 #   Function for insert into database
 # def insert_db(p_id, p_vendor, p_name, p_price, p_img, time, l_id):
 
-def insert_db(**kwargs):
+def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update):
     # print(kwargs)
-    if "l_id" in kwargs and "p_img" in kwargs:
+    if update:
+
         try:
             connection = mysql.connector.connect(host='localhost',
                                                  port='8889',
                                                  database='price_db',
                                                  user='root',
                                                  password='root')
-            sql_insert_query = """ INSERT INTO `price_history`(`id`, `vendor`, `name`, `price`, `date`, `image`) VALUES (%s,%s,%s,%s,%s,%s)"""
+            sql_insert_query = """ INSERT INTO `price_history`(`id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
             sql_insert_query2 = """ INSERT INTO `product_cat`(`id`, `vendor`, `name`, `last_update`, `link`, `link_id`) VALUES (%s,%s,%s,%s,%s,%s)"""
             cursor = connection.cursor()
-            p_info = (
-            kwargs['p_id'], kwargs['p_vendor'], kwargs['p_name'], kwargs['p_price'], kwargs['time'], kwargs['p_img'])
-            p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % kwargs['l_id']
-            c_info = (kwargs['p_id'], kwargs['p_vendor'], kwargs['p_name'], kwargs['time'], p_link, kwargs['l_id'])
+            p_info = (p_id, p_vendor, p_name, p_price, time)
+            p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % l_id
+            c_info = (p_id, p_vendor, p_name, time, p_link, l_id)
             cursor.execute(sql_insert_query, p_info)
             cursor.execute(sql_insert_query2, c_info)
             connection.commit()
@@ -103,7 +103,32 @@ def insert_db(**kwargs):
             if (connection.is_connected()):
                 cursor.close()
                 connection.close()
-                print("MySQL connection is closed")
+    else:
+        try:
+            connection = mysql.connector.connect(host='localhost',
+                                                 port='8889',
+                                                 database='price_db',
+                                                 user='root',
+                                                 password='root')
+            sql_insert_query = """ INSERT INTO `price_history`(`id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
+            sql_insert_query2 = """ INSERT INTO `product_cat`(`id`, `vendor`, `name`, `last_update`, `link`, `link_id`) VALUES (%s,%s,%s,%s,%s,%s)"""
+            cursor = connection.cursor()
+            p_info = (p_id, p_vendor, p_name, p_price, time)
+            p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % l_id
+            c_info = (p_id, p_vendor, p_name, time, p_link, l_id)
+            cursor.execute(sql_insert_query, p_info)
+            cursor.execute(sql_insert_query2, c_info)
+            connection.commit()
+            print("Record inserted successfully into Database")
+        except mysql.connector.Error as error:
+            connection.rollback()  # rollback if any exception occured
+            print("Failed inserting record into database. {}".format(error))
+
+        finally:
+            # closing database connection.
+            if (connection.is_connected()):
+                cursor.close()
+                connection.close()
 
 
 #   Main function to extract data , image and insert into database
@@ -156,9 +181,10 @@ def get_data(url):
                         print("Current")
                         #   pull the history data
             else:
-                print("No Record!")
-
-                #   insert data to 2 database
+                print("No Current Record!")
+                # Insert Into Databse
+                insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
+                          time=capture_time, l_id=link_id, update=False, create=True)
 
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
@@ -170,20 +196,18 @@ def get_data(url):
                 cursor.close()
                 connection.close()
                 print("MySQL connection is closed")
-            # -----This is for evidence image-----
-            product_img = get_image(url)
+
+            # -----This is for evidence image(Options)-----
+            # product_img = get_image(url)
 
             # Insert Into Databse
-            insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
-                      p_img=product_img, time=capture_time, l_id=link_id)
-            # insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
-            #           time=capture_time, l_id=link_id)
 
     return True
 
 
 if __name__ == '__main__':
-    link = 'https://www.chemistwarehouse.com.au/buy/65960'
+    link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65961'
     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
     if get_data(link) is None:
         print("Product not found")
