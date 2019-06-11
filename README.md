@@ -3,11 +3,11 @@
 - [ ]   __No.1    ChemistWarehouse__
     - [x]   Stage Zero  (Preparation & Design)
 
-    - [ ]   Stage One   (Basic back-end functionality)
+    - [x]   Stage One   (Basic back-end functionality)
     
         - [x] Database Design & Setup
-        - [ ] Check Individual Product price
-        - [ ] Store Product Info into DB with timestamp
+        - [x] Check Individual Product price
+        - [x] Store Product Info into DB with timestamp
     
     - [ ]   Stage Two   (Basic API functionality)
         - [ ] Flask(lib) setup for API back-end
@@ -45,9 +45,9 @@
 
 ###price_db.product_cat
 
-| id   | product-id   | vendor  | name  | last_update  | link  | link_number  |
-| -------- | -------- | -------- | -------- | -------- | -------- | -------- |   
-| INT  ­ ­ ­ ­  | INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ | INT  ­ ­ ­ ­ | 
+| id   | product-id   | vendor  | name  | last_update  | link  | link_id  | prod_img  |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |   
+| INT  ­ ­ ­ ­  | INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DATE  ­ ­ ­ ­ | VARCHAR(255)  ­ ­ ­ ­ | INT  ­ ­ ­ ­ | VARCHAR(255  ­ ­ ­ ­ | 
 
 ###price_db.product_history
 
