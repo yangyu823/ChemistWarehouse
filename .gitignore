@@ -58,7 +58,7 @@ coverage.xml
 
 # Django stuff:
 *.log
-local_settings.py
+backend/backend/settings.py
 db.sqlite3
 
 # Flask stuff:
@@ -221,4 +221,3 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-
