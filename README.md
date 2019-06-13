@@ -37,7 +37,7 @@
     - [ ]   Supermarket (Eg.Coles, WoolWorth etc)
     - [ ]   To be continue
 
-
+``python manage.py runserver 9999``
 
 ***
 
