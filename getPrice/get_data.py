@@ -5,6 +5,7 @@ import requests
 from lxml import html
 from time import sleep
 import mysql.connector
+import json
 from datetime import datetime
 from selenium import webdriver
 from fuc_agent import get_agent
@@ -155,7 +156,6 @@ def get_data(url):
     if url.startswith("www"):
         url = "https://" + url
 
-
     response = requests.get(url, timeout=2, headers={'User-Agent': get_agent()}).text
     selector = html.fromstring(response)
 
@@ -220,6 +220,52 @@ def get_data(url):
     return True
 
 
+def get_db(vendor, product_id, product_name):
+    # record = {},
+    try:
+        connection = mysql.connector.connect(host='localhost',
+                                             port='8889',
+                                             database='price_db',
+                                             user='root',
+                                             password='root')
+        sql_select_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
+        cursor = connection.cursor()
+        #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
+        cursor.execute(sql_select_query, (product_id, vendor))
+        records = cursor.fetchall()
+        if records:
+            print("Found Record")
+            for row in records:
+                print(row)
+            #     if row[0] > (datetime.now().date()):
+            #         print("Impossible")
+            #     elif row[0] < (datetime.now().date()):
+            #         print("Outdated")
+            #         #   insert data to 1 db
+            #         #   pull the history data
+            #     else:
+            #         print("Current")
+            #         #   pull the history data
+        else:
+            print("No Record!")
+
+            #   insert data to 2 database
+        print(records)
+
+    except mysql.connector.Error as error:
+        connection.rollback()  # rollback if any exception occured
+        print("Failed inserting record into price_db table. {}".format(error))
+
+    finally:
+        # closing database connection.
+        if connection.is_connected():
+            cursor.close()
+            connection.close()
+            print("MySQL connection is closed")
+
+    return records
+
+
 if __name__ == '__main__':
     link = 'https://www.chemistwarehouse.com.au/buy/65966'
     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
@@ -234,11 +280,9 @@ if __name__ == '__main__':
     # Product not found:
     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 
-    if get_data(link) is None:
-        print("Product not found")
-    else:
-        print("Product found")
+    # if get_data(link) is None:
+    #     print("Product not found")
+    # else:
+    #     print("Product found")
 
-    # print(dir())
-    # print(globals())
-    # print(locals())
+    get_db('ChemistWarehouse', 2627074, 'Nivea Body Irresistibly Smooth 400ml')
