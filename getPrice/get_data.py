@@ -143,8 +143,9 @@ def get_data(url):
             if temp_array[temp_count] == "buy":
                 link_id = temp_array[temp_count + 1]
                 url = "https://www.chemistwarehouse.com.au/buy/" + temp_array[temp_count + 1]
-                product_img = "https://static.chemistwarehouse.com.au/ams/media/pi/%s/2DF_400.jpg" % link_id
             temp_count += 1
+
+
     elif "mychemist" in url:
         product_vendor = 'MyChemist'
     else:
@@ -153,6 +154,7 @@ def get_data(url):
     #   Reformat URL:
     if url.startswith("www"):
         url = "https://" + url
+
 
     response = requests.get(url, timeout=2, headers={'User-Agent': get_agent()}).text
     selector = html.fromstring(response)
@@ -165,6 +167,7 @@ def get_data(url):
         product_name = (selector.xpath('//*[@class="product-name"]/h1/text()')[0]).strip()
         product_price = (selector.xpath('//*[@class="Price"]/span/text()')[0]).split("$")[-1]
         capture_time = datetime.now().date().strftime('%Y-%m-%d')
+        product_img = (selector.xpath('//*[@class="image_enlarger"]/@href')[0])
         #   Check database for product info
         #   Condition check for next step
         try:
@@ -218,13 +221,18 @@ def get_data(url):
 
 
 if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    link = 'www.chemistwarehouse.com.au/buy/65964'
+    link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65968'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65969'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65960'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65970'
+    # link = 'www.chemistwarehouse.com.au/buy/65964'
     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
 
     # Product not found:
-    link = 'https://www.chemistwarehouse.com.au/buy/65965'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 
     if get_data(link) is None:
         print("Product not found")

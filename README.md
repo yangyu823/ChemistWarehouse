@@ -8,6 +8,7 @@
         - [x] Database Design & Setup
         - [x] Check Individual Product price
         - [x] Store Product Info into DB with timestamp
+        - [ ] Function to return product info and price history
     
     - [ ]   Stage Two   (Basic API functionality)
         - [ ] Flask/Django(lib) setup for API back-end
