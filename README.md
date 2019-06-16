@@ -1,6 +1,4 @@
 #   PriceTrackingHouse
-
-
 - [ ]   __No.1    ChemistWarehouse__
     - [x]   Stage Zero  (Preparation & Design)
 
