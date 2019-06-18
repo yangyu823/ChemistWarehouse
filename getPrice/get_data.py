@@ -220,7 +220,7 @@ def get_data(url):
     return True
 
 
-def get_db(vendor, product_id, product_name):
+def get_db(vendor, product_id, product_name, product_img):
     # record = {},
     try:
         connection = mysql.connector.connect(host='localhost',
@@ -233,10 +233,16 @@ def get_db(vendor, product_id, product_name):
         #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
         cursor.execute(sql_select_query, (product_id, vendor))
         records = cursor.fetchall()
+        result = {}
+        history = {}
+        result["id"] = product_id
+        result["vendor"] = vendor
+        result["name"] = product_name
+        result["img"] = product_img
         if records:
             print("Found Record")
             for row in records:
-                print(row)
+                history[row[1].strftime("%b-%d-%Y")] = row[0]
             #     if row[0] > (datetime.now().date()):
             #         print("Impossible")
             #     elif row[0] < (datetime.now().date()):
@@ -250,8 +256,10 @@ def get_db(vendor, product_id, product_name):
             print("No Record!")
 
             #   insert data to 2 database
-        print(records)
 
+        result["price_history"] = history
+        tttt = json.dumps(result)
+        print(tttt)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
         print("Failed inserting record into price_db table. {}".format(error))
@@ -267,14 +275,14 @@ def get_db(vendor, product_id, product_name):
 
 
 if __name__ == '__main__':
-    link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
     # link = 'www.chemistwarehouse.com.au/buy/65964'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
+    link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
 
     # Product not found:
@@ -285,4 +293,5 @@ if __name__ == '__main__':
     # else:
     #     print("Product found")
 
-    get_db('ChemistWarehouse', 2627074, 'Nivea Body Irresistibly Smooth 400ml')
+    get_db('ChemistWarehouse', 2627074, 'Nivea Body Irresistibly Smooth 400ml',
+           'https://static.chemistwarehouse.com.au/ams/media/pi/65961/2DF_200.jpg')
