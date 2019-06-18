@@ -38,88 +38,38 @@ def get_image(url):
     return screenshot_png
 
 
-#   Function to check& update existing record from DB
-# def check_db(link_id):
-#     try:
-#         sql_select_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s"""
-#         #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-#         cursor.execute(sql_select_query, (link_id,))
-#         records = cursor.fetchall()
-#         if records:
-#             print("Found Record")
-#             for row in records:
-#                 if row[0] > (datetime.now().date()):
-#                     print("Impossible")
-#                 elif row[0] < (datetime.now().date()):
-#                     print("Outdated")
-#                     #   insert data to 1 db
-#                     #   pull the history data
-#                 else:
-#                     print("Current")
-#                     #   pull the history data
-#         else:
-#             print("No Record!")
-#
-#             #   insert data to 2 database
-#
-#     except mysql.connector.Error as error:
-#         connection.rollback()  # rollback if any exception occured
-#         print("Failed inserting record into price_db table. {}".format(error))
-#
-#     finally:
-#         # closing database connection.
-#         if connection.is_connected():
-#             cursor.close()
-#             connection.close()
-#             print("MySQL connection is closed")
-
-
-#   Function for insert into database
-# def insert_db(p_id, p_vendor, p_name, p_price, p_img, time, l_id):
-
 def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img):
-    cursor = connection.cursor()
     #   Create New Record
     if not update and create:
         try:
-            sql_insert_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
-            sql_insert_query2 = """ INSERT INTO `product_cat`(`product_id`, `vendor`, `name`, `last_update`, `link`, `link_id`,`prod_img`) VALUES (%s,%s,%s,%s,%s,%s,%s)"""
+            sql_create_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
+            sql_create_query2 = """ INSERT INTO `product_cat`(`product_id`, `vendor`, `name`, `last_update`, `link`, `link_id`,`prod_img`) VALUES (%s,%s,%s,%s,%s,%s,%s)"""
             p_info = (p_id, p_vendor, p_name, p_price, time)
             p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % l_id
             c_info = (p_id, p_vendor, p_name, time, p_link, l_id, p_img)
-            cursor.execute(sql_insert_query, p_info)
-            cursor.execute(sql_insert_query2, c_info)
+            cursor.execute(sql_create_query, p_info)
+            cursor.execute(sql_create_query2, c_info)
             connection.commit()
             print("Record inserted successfully into Database")
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
             print("Failed inserting record into database. {}".format(error))
-        finally:
-            # closing database connection.
-            if (connection.is_connected()):
-                cursor.close()
-                connection.close()
 
     #   Update Existing Record
     elif update and not create:
         print("update existing one")
         try:
-            sql_insert_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
-            sql_insert_query2 = """ UPDATE `product_cat` SET last_update = %s WHERE link_id = %s """
+            sql_update_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
+            sql_update_query2 = """ UPDATE `product_cat` SET last_update = %s WHERE link_id = %s """
             p_info = (p_id, p_vendor, p_name, p_price, time)
             c_info = (time, l_id)
-            cursor.execute(sql_insert_query, p_info)
-            cursor.execute(sql_insert_query2, c_info)
+            cursor.execute(sql_update_query, p_info)
+            cursor.execute(sql_update_query2, c_info)
             connection.commit()
             print("Record update successfully")
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
             print("Failed update record. {}".format(error))
-        finally:
-            # closing database connection.
-            if (connection.is_connected()):
-                cursor.close()
-                connection.close()
     elif not update and not create:
         print("record up to date")
     else:
@@ -127,7 +77,7 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
 
 
 #   Main function to extract data , image and insert into database
-def get_data(url):
+def check_data(url):
     # -----This is for Reformat URL && different vendor-----
     if "chemistwarehouse" in url:
         product_vendor = 'ChemistWarehouse'
@@ -139,7 +89,6 @@ def get_data(url):
                 link_id = temp_array[temp_count + 1]
                 url = "https://www.chemistwarehouse.com.au/buy/" + temp_array[temp_count + 1]
             temp_count += 1
-
 
     elif "mychemist" in url:
         product_vendor = 'MyChemist'
@@ -165,9 +114,9 @@ def get_data(url):
         #   Check database for product info
         #   Condition check for next step
         try:
-            sql_select_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s AND vendor =%s"""
+            sql_check_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s AND vendor =%s"""
             #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-            cursor.execute(sql_select_query, (link_id, product_vendor))
+            cursor.execute(sql_check_query, (link_id, product_vendor))
             records = cursor.fetchall()
             if records:
                 print("Found Record")
@@ -179,12 +128,12 @@ def get_data(url):
                         insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
                                   time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
                         #   pull the history data
-                        get_db(product_vendor, product_id, product_name, product_img)
+                        get_data(product_vendor, product_id, product_name, product_img)
                     else:
                         #   Record up to date
                         print("Record Up to date")
                         #   pull the history data
-                        get_db(product_vendor, product_id, product_name, product_img)
+                        get_data(product_vendor, product_id, product_name, product_img)
             else:
                 print("No Current Record!")
                 # Insert Into Databse
@@ -208,12 +157,12 @@ def get_data(url):
     return True
 
 
-def get_db(vendor, product_id, product_name, product_img):
+def get_data(vendor, product_id, product_name, product_img):
     # record = {},
     try:
-        sql_record_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
+        sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
         #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-        cursor.execute(sql_record_query, (product_id, vendor))
+        cursor.execute(sql_get_query, (product_id, vendor))
         records = cursor.fetchall()
         result = {}
         history = {}
@@ -230,19 +179,12 @@ def get_db(vendor, product_id, product_name, product_img):
         connection.rollback()  # rollback if any exception occured
         print("Failed inserting record into price_db table. {}".format(error))
 
-    finally:
-        # closing database connection.
-        if connection.is_connected():
-            cursor.close()
-            connection.close()
-            print("MySQL connection is closed")
-
-    return record_final
+    # return record_final
 
 
 if __name__ == '__main__':
     # link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+    link = 'https://www.chemistwarehouse.com.au/buy/65967'
     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
@@ -252,12 +194,7 @@ if __name__ == '__main__':
 
     # Product not found:
     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
-    link = 'https://www.chemistwarehouse.com.au/buy/65962'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65962'
 
-    if get_data(link) is None:
+    if check_data(link) is None:
         print("Product not found")
-    else:
-        print("Product found")
-
-    # get_db('ChemistWarehouse', 2627074, 'Nivea Body Irresistibly Smooth 400ml',
-    #        'https://static.chemistwarehouse.com.au/ams/media/pi/65961/2DF_200.jpg')
