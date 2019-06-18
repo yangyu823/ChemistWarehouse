@@ -8,7 +8,7 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-from fuc_agent import get_agent
+from GetInfo.getPrice.fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -90,7 +90,7 @@ def get_data(vendor, product_id, product_name, product_img):
         # print(record_final)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
-    return record_final
+    return result
 
 
 #   Main function to extract data , image and insert into database
@@ -170,19 +170,18 @@ def check_data(url):
             # -----This is for evidence image(Options)-----
             # product_img = get_image(url)
 
-
-if __name__ == '__main__':
-    link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65968'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65969'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65960'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65970'
-    # link = 'www.chemistwarehouse.com.au/buy/65964'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
-
-    # Product not found:
-    # link = 'https://www.chemistwarehouse.com.au/buy/65965'
-    # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-
-    print(check_data(link))
+# if __name__ == '__main__':
+#     link = 'https://www.chemistwarehouse.com.au/buy/65966'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
+#     # link = 'www.chemistwarehouse.com.au/buy/65964'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
+#
+#     # Product not found:
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
+#
+#     print(check_data(link))

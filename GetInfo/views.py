@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from django.core import serializers
 from django.conf import settings
 import json
+from GetInfo.getPrice.get_data import check_data
 
 
 # Create your views here.
@@ -15,9 +16,9 @@ import json
 @api_view(["POST"])
 def TestAPI(test_data):
     try:
-        height = json.loads(test_data.body)
-        weight = str(height * 10)
-
-        return JsonResponse("Test data should be : " + weight + " kg", safe=False)
+        url = json.loads(test_data.body)
+        result = check_data(url)
+        # print(url)
+        return JsonResponse(result, safe=False)
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
