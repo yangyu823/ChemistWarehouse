@@ -15,7 +15,6 @@ from fuc_agent import get_agent
 # 禁用安全请求警告
 # requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-
 connection = mysql.connector.connect(host='localhost',
                                      port='8889',
                                      database='price_db',
@@ -50,14 +49,11 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
             cursor.execute(sql_create_query, p_info)
             cursor.execute(sql_create_query2, c_info)
             connection.commit()
-            print("Record inserted successfully into Database")
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
-            print("Failed inserting record into database. {}".format(error))
 
     #   Update Existing Record
     elif update and not create:
-        print("update existing one")
         try:
             sql_update_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
             sql_update_query2 = """ UPDATE `product_cat` SET last_update = %s WHERE link_id = %s """
@@ -66,14 +62,35 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
             cursor.execute(sql_update_query, p_info)
             cursor.execute(sql_update_query2, c_info)
             connection.commit()
-            print("Record update successfully")
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
-            print("Failed update record. {}".format(error))
     elif not update and not create:
         print("record up to date")
     else:
         print("Impossible")
+
+
+def get_data(vendor, product_id, product_name, product_img):
+    record_final = {}
+    try:
+        sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
+        #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
+        cursor.execute(sql_get_query, (product_id, vendor))
+        records = cursor.fetchall()
+        result = {}
+        history = {}
+        result["id"] = product_id
+        result["vendor"] = vendor
+        result["name"] = product_name
+        result["img"] = product_img
+        for row in records:
+            history[row[1].strftime("%b-%d-%Y")] = row[0]
+        result["price_history"] = history
+        record_final = json.dumps(result)
+        # print(record_final)
+    except mysql.connector.Error as error:
+        connection.rollback()  # rollback if any exception occured
+    return record_final
 
 
 #   Main function to extract data , image and insert into database
@@ -104,7 +121,7 @@ def check_data(url):
 
     #   Link page validation
     if (len(selector.xpath('//*[@class="productDetail"]'))) == 0:
-        return
+        return {"End Result - Product Not Found"}
     else:
         product_id = ((selector.xpath('//*[@class="product-id"]/text()')[0]).split(':')[-1]).strip()
         product_name = (selector.xpath('//*[@class="product-name"]/h1/text()')[0]).strip()
@@ -119,72 +136,44 @@ def check_data(url):
             cursor.execute(sql_check_query, (link_id, product_vendor))
             records = cursor.fetchall()
             if records:
-                print("Found Record")
                 for row in records:
                     if row[0] > (datetime.now().date()):
-                        print("Impossible")
+                        return {"End Result - Impossible"}
                     elif row[0] < (datetime.now().date()):
                         #   Outdated Record
                         insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
                                   time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
                         #   pull the history data
-                        get_data(product_vendor, product_id, product_name, product_img)
+                        return get_data(product_vendor, product_id, product_name, product_img)
                     else:
                         #   Record up to date
-                        print("Record Up to date")
                         #   pull the history data
-                        get_data(product_vendor, product_id, product_name, product_img)
+                        return get_data(product_vendor, product_id, product_name, product_img)
+
             else:
-                print("No Current Record!")
                 # Insert Into Databse
                 insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
                           time=capture_time, l_id=link_id, update=False, create=True, p_img=product_img)
+                return {"End Result No Current Record!"}
 
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
-            print("Failed inserting record into price_db table. {}".format(error))
+            return {"End Result - Failed inserting record.  {}".format(error)}
 
         finally:
             # closing database connection.
             if connection.is_connected():
                 cursor.close()
                 connection.close()
-                print("MySQL connection is closed")
+                # print("MySQL connection is closed")
 
             # -----This is for evidence image(Options)-----
             # product_img = get_image(url)
 
-    return True
-
-
-def get_data(vendor, product_id, product_name, product_img):
-    # record = {},
-    try:
-        sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
-        #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-        cursor.execute(sql_get_query, (product_id, vendor))
-        records = cursor.fetchall()
-        result = {}
-        history = {}
-        result["id"] = product_id
-        result["vendor"] = vendor
-        result["name"] = product_name
-        result["img"] = product_img
-        for row in records:
-            history[row[1].strftime("%b-%d-%Y")] = row[0]
-        result["price_history"] = history
-        record_final = json.dumps(result)
-        print(record_final)
-    except mysql.connector.Error as error:
-        connection.rollback()  # rollback if any exception occured
-        print("Failed inserting record into price_db table. {}".format(error))
-
-    # return record_final
-
 
 if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    link = 'https://www.chemistwarehouse.com.au/buy/65967'
+    link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65967'
     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
@@ -196,5 +185,4 @@ if __name__ == '__main__':
     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
 
-    if check_data(link) is None:
-        print("Product not found")
+    print(check_data(link))
