@@ -38,7 +38,6 @@
     - [ ]   To be continue
 
 ``python manage.py runserver 9999``
-
 ***
 
 ### DataBase Structure:
