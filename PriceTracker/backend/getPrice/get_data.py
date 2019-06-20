@@ -8,7 +8,7 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-from GetInfo.getPrice.fuc_agent import get_agent
+from PriceTracker.backend.getPrice.fuc_agent import get_agent
 
 # from fuc_agent import get_agent
 
@@ -113,60 +113,63 @@ def check_data(url):
     #   Reformat URL:
     if url.startswith("www"):
         url = "https://" + url
+    try:
+        response = requests.get(url, timeout=2, headers={'User-Agent': get_agent()}).text
+        selector = html.fromstring(response)
 
-    response = requests.get(url, timeout=2, headers={'User-Agent': get_agent()}).text
-    selector = html.fromstring(response)
-
-    #   Link page validation
-    if (len(selector.xpath('//*[@class="productDetail"]'))) == 0:
-        return {"End Result": "Product Not Found"}
-    else:
-        product_id = ((selector.xpath('//*[@class="product-id"]/text()')[0]).split(':')[-1]).strip()
-        product_name = (selector.xpath('//*[@class="product-name"]/h1/text()')[0]).strip()
-        product_price = (selector.xpath('//*[@class="Price"]/span/text()')[0]).split("$")[-1]
-        capture_time = datetime.now().date().strftime('%Y-%m-%d')
-        product_img = (selector.xpath('//*[@class="image_enlarger"]/@href')[0])
-        #   Check database for product info
-        #   Condition check for next step
-        try:
-            sql_check_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s AND vendor =%s"""
-            #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-            cursor.execute(sql_check_query, (link_id, product_vendor))
-            records = cursor.fetchall()
-            if records:
-                for row in records:
-                    if row[0] > (datetime.now().date()):
-                        return {"End Result": "Impossible"}
-                    elif row[0] < (datetime.now().date()):
-                        #   Outdated Record
-                        insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
-                                  time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
-                        #   pull the history data
-                        return get_data(product_vendor, product_id, product_name, product_img)
-                    else:
+        #   Link page validation
+        if (len(selector.xpath('//*[@class="productDetail"]'))) == 0:
+            return {"Result": "Product Not Found"}
+        else:
+            product_id = ((selector.xpath('//*[@class="product-id"]/text()')[0]).split(':')[-1]).strip()
+            product_name = (selector.xpath('//*[@class="product-name"]/h1/text()')[0]).strip()
+            product_price = (selector.xpath('//*[@class="Price"]/span/text()')[0]).split("$")[-1]
+            capture_time = datetime.now().date().strftime('%Y-%m-%d')
+            product_img = (selector.xpath('//*[@class="image_enlarger"]/@href')[0])
+            #   Check database for product info
+            #   Condition check for next step
+            try:
+                sql_check_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s AND vendor =%s"""
+                #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
+                cursor.execute(sql_check_query, (link_id, product_vendor))
+                records = cursor.fetchall()
+                if records:
+                    for row in records:
+                        if row[0] > (datetime.now().date()):
+                            return {"Result": "Impossible"}
+                        elif row[0] < (datetime.now().date()):
+                            #   Outdated Record
+                            insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
+                                      time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
+                            #   pull the history data
+                            # return get_data(product_vendor, product_id, product_name, product_img)
+                        # else:
                         #   Record up to date
                         #   pull the history data
-                        return get_data(product_vendor, product_id, product_name, product_img)
+                        # return get_data(product_vendor, product_id, product_name, product_img)
+                else:
+                    # Insert Into Databse
+                    insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
+                              time=capture_time, l_id=link_id, update=False, create=True, p_img=product_img)
+                    # return {"Result": "No Current Record!"}
 
-            else:
-                # Insert Into Databse
-                insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
-                          time=capture_time, l_id=link_id, update=False, create=True, p_img=product_img)
-                return {"End Result": "No Current Record!"}
+                return get_data(product_vendor, product_id, product_name, product_img)
 
-        except mysql.connector.Error as error:
-            connection.rollback()  # rollback if any exception occured
-            return {"End Result": "Failed inserting record.  {}".format(error)}
+            except mysql.connector.Error as error:
+                connection.rollback()  # rollback if any exception occured
+                return {"Result": "Failed inserting record.  {}".format(error)}
 
-        # finally:
-        #     # closing database connection.
-        #     if connection.is_connected():
-        #         cursor.close()
-        #         connection.close()
-        #         print("MySQL connection is closed")
+            # finally:
+            #     # closing database connection.
+            #     if connection.is_connected():
+            #         cursor.close()
+            #         connection.close()
+            #         print("MySQL connection is closed")
 
-        # -----This is for evidence image(Options)-----
-        # product_img = get_image(url)
+            # -----This is for evidence image(Options)-----
+            # product_img = get_image(url)
+    except Exception:
+        return "Result: Page Does Not Exist !"
 
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'

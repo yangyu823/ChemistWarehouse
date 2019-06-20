@@ -54,5 +54,6 @@
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- | 
 | INT  ­ ­ ­ ­  | INT  ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­ ­  | VARCHAR(255)  ­ ­ ­ ­  | DOUBLE  ­ ­ ­ ­  | DATE  ­ ­ ­ ­  | LONGBLOB  ­ ­ ­ ­  | 
 
+
 `imgae store as BLOB(binary). This is for price record evidence`
 
