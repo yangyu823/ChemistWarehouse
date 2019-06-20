@@ -10,6 +10,8 @@ from datetime import datetime
 from selenium import webdriver
 from GetInfo.getPrice.fuc_agent import get_agent
 
+# from fuc_agent import get_agent
+
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 # 禁用安全请求警告
@@ -64,10 +66,6 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
             connection.commit()
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
-    elif not update and not create:
-        print("record up to date")
-    else:
-        print("Impossible")
 
 
 def get_data(vendor, product_id, product_name, product_img):
@@ -121,7 +119,7 @@ def check_data(url):
 
     #   Link page validation
     if (len(selector.xpath('//*[@class="productDetail"]'))) == 0:
-        return {"End Result - Product Not Found"}
+        return {"End Result": "Product Not Found"}
     else:
         product_id = ((selector.xpath('//*[@class="product-id"]/text()')[0]).split(':')[-1]).strip()
         product_name = (selector.xpath('//*[@class="product-name"]/h1/text()')[0]).strip()
@@ -138,7 +136,7 @@ def check_data(url):
             if records:
                 for row in records:
                     if row[0] > (datetime.now().date()):
-                        return {"End Result - Impossible"}
+                        return {"End Result": "Impossible"}
                     elif row[0] < (datetime.now().date()):
                         #   Outdated Record
                         insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
@@ -154,21 +152,21 @@ def check_data(url):
                 # Insert Into Databse
                 insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
                           time=capture_time, l_id=link_id, update=False, create=True, p_img=product_img)
-                return {"End Result No Current Record!"}
+                return {"End Result": "No Current Record!"}
 
         except mysql.connector.Error as error:
             connection.rollback()  # rollback if any exception occured
-            return {"End Result - Failed inserting record.  {}".format(error)}
+            return {"End Result": "Failed inserting record.  {}".format(error)}
 
-        finally:
-            # closing database connection.
-            if connection.is_connected():
-                cursor.close()
-                connection.close()
-                # print("MySQL connection is closed")
+        # finally:
+        #     # closing database connection.
+        #     if connection.is_connected():
+        #         cursor.close()
+        #         connection.close()
+        #         print("MySQL connection is closed")
 
-            # -----This is for evidence image(Options)-----
-            # product_img = get_image(url)
+        # -----This is for evidence image(Options)-----
+        # product_img = get_image(url)
 
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'
@@ -183,5 +181,4 @@ def check_data(url):
 #     # Product not found:
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-#
 #     print(check_data(link))

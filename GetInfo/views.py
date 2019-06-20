@@ -16,9 +16,19 @@ from GetInfo.getPrice.get_data import check_data
 @api_view(["POST"])
 def TestAPI(test_data):
     try:
-        url = json.loads(test_data.body)
-        result = check_data(url)
+        result = str(json.loads(test_data.body))
         # print(url)
+        return JsonResponse(result, safe=False)
+    except ValueError as e:
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
+
+@api_view(["POST"])
+def NewAPI(data):
+    try:
+        url = json.loads(data.body)
+        result = check_data(url)
+        print(url)
+        print(result)
         return JsonResponse(result, safe=False)
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
