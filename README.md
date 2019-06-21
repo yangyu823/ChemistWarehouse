@@ -9,8 +9,8 @@
         - [x] Store Product Info into DB with timestamp
         - [x] Function to return product info and price history
     
-    - [ ]   Stage Two   (Basic API functionality)
-        - [x] Flask/Django(lib) setup for API back-end
+    - [x]   Stage Two   (Basic API functionality)
+        - [x] <s>Flask</s>/Django(lib) setup for API back-end
         - [x] `[API_1]` single function with request link
             - [x] 1.Link check to decide which website it is
             - [x] 2.Search from database to decide output

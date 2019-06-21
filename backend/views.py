@@ -9,18 +9,28 @@ from django.core import serializers
 from django.conf import settings
 import json
 from backend.Price_get.get_data import check_data
+from backend.models import Backend
+from backend.serializers import BackendSerializer
+from rest_framework import generics
 
 
 # Create your views here.
 
+class BackendListCreate(generics.ListCreateAPIView):
+    queryset = Backend.objects.all()
+    serializer_class = BackendSerializer
+
+
+
+
+
 @api_view(["POST"])
-def TestAPI(test_data):
+def TestPost(test_data):
     try:
         result = str(json.loads(test_data.body))
         # print(url)
         # return JsonResponse(result, safe=False)
         return Response(result)
-
     except ValueError as e:
         return Response(status.HTTP_400_BAD_REQUEST)
 
@@ -40,7 +50,7 @@ def NewAPI(data):
 
 
 @api_view(["GET"])
-def test(request):
+def TestGet(request):
     try:
         result = "Hello world"
         return Response(result)

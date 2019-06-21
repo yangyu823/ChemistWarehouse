@@ -11,5 +11,5 @@ class Backend(models.Model):
     message = models.CharField(max_length=300)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def _str_(self):
-        return self.title
+    # def _str_(self):
+    #     return self.title

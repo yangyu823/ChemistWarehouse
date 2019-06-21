@@ -20,10 +20,11 @@ from backend import views
 
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    url(r'^admin/', admin.site.urls),
+    path('', include('backend.urls')),
+    path('admin/', admin.site.urls),
+    # url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
-    url(r'^test/', views.TestAPI),
-    url(r'^test2/', views.test),
+    url(r'^test/', views.TestPost),
+    url(r'^test2/', views.TestGet),
     url(r'^api/', views.NewAPI)
 ]
