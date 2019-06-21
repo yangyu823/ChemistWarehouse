@@ -8,7 +8,7 @@ from django.http import JsonResponse
 from django.core import serializers
 from django.conf import settings
 import json
-from PriceTracker.backend.getPrice.get_data import check_data
+from backend.Price_get.get_data import check_data
 
 
 # Create your views here.

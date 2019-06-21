@@ -1,4 +1,4 @@
-"""PriceTracker URL Configuration
+"""project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.urls import path
 from django.conf.urls import url, include
-from PriceTracker.backend import views
+from backend import views
+
 
 urlpatterns = [
-    url('', admin.site.urls),
-    # url(r'^admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^test/', views.TestAPI),
     url(r'^test2/', views.test),

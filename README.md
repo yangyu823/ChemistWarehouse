@@ -10,12 +10,12 @@
         - [x] Function to return product info and price history
     
     - [ ]   Stage Two   (Basic API functionality)
-        - [ ] Flask/Django(lib) setup for API back-end
-        - [ ] `[API_1]` single function with request link
-            - [ ] 1.Link check to decide which website it is
-            - [ ] 2.Search from database to decide output
-            - [ ] 3.Return product basic information
-            - [ ] 4.Return history product price dataset
+        - [x] Flask/Django(lib) setup for API back-end
+        - [x] `[API_1]` single function with request link
+            - [x] 1.Link check to decide which website it is
+            - [x] 2.Search from database to decide output
+            - [x] 3.Return product basic information
+            - [x] 4.Return history product price dataset
     - [ ]   Stage Three   (Website and Database host on cloud)
         - [ ] Heroku Database setup
         - [ ] Basic Frontend portal

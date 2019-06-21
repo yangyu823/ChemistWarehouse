@@ -8,10 +8,7 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-from PriceTracker.backend.getPrice.fuc_agent import get_agent
-
-# from fuc_agent import get_agent
-
+from backend.Price_get.fuc_agent import get_agent
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 # 禁用安全请求警告
@@ -22,7 +19,9 @@ connection = mysql.connector.connect(host='localhost',
                                      database='price_db',
                                      user='root',
                                      password='root')
-cursor = connection.cursor()
+
+
+# cursor = connection.cursor()
 
 
 #   Function to get evidence image base on provided link
@@ -40,6 +39,7 @@ def get_image(url):
 
 
 def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img):
+    cursor = connection.cursor()
     #   Create New Record
     if not update and create:
         try:
@@ -69,6 +69,7 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
 
 
 def get_data(vendor, product_id, product_name, product_img):
+    cursor = connection.cursor()
     record_final = {}
     try:
         sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
@@ -129,6 +130,12 @@ def check_data(url):
             #   Check database for product info
             #   Condition check for next step
             try:
+                connection = mysql.connector.connect(host='localhost',
+                                                     port='8889',
+                                                     database='price_db',
+                                                     user='root',
+                                                     password='root')
+                cursor = connection.cursor()
                 sql_check_query = """ SELECT last_update FROM `product_cat` WHERE link_id = %s AND vendor =%s"""
                 #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
                 cursor.execute(sql_check_query, (link_id, product_vendor))
@@ -139,7 +146,8 @@ def check_data(url):
                             return {"Result": "Impossible"}
                         elif row[0] < (datetime.now().date()):
                             #   Outdated Record
-                            insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
+                            insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name,
+                                      p_price=product_price,
                                       time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
                             #   pull the history data
                             # return get_data(product_vendor, product_id, product_name, product_img)
@@ -159,17 +167,17 @@ def check_data(url):
                 connection.rollback()  # rollback if any exception occured
                 return {"Result": "Failed inserting record.  {}".format(error)}
 
-            # finally:
-            #     # closing database connection.
-            #     if connection.is_connected():
-            #         cursor.close()
-            #         connection.close()
-            #         print("MySQL connection is closed")
+            finally:
+                # closing database connection.
+                if connection.is_connected():
+                    cursor.close()
+                    connection.close()
+                    # print("MySQL connection is closed")
 
             # -----This is for evidence image(Options)-----
             # product_img = get_image(url)
     except Exception:
-        return "Result: Page Does Not Exist !"
+        return {"Result": "Page Does Not Exist !"}
 
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'

@@ -8,7 +8,7 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-from PriceTracker.backend.getPrice.fuc_agent import get_agent
+from backend.Price_get.fuc_agent import get_agent
 
 # from fuc_agent import get_agent
 
