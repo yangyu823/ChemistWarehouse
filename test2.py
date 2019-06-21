@@ -44,9 +44,6 @@ def check_data(url):
     else:
         product_vendor = 'Unknow'
 
-    #   Reformat URL:
-    if url.startswith("www"):
-        url = "https://" + url
     try:
         response = requests.get(url, timeout=2, headers={'User-Agent': get_agent()}).text
         selector = html.fromstring(response)
@@ -69,14 +66,15 @@ def check_data(url):
 if __name__ == '__main__':
     link = 'https://www.chemistware.com'
     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
-    #     # link = 'www.chemistwarehouse.com.au/buy/65964'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65968'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65969'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65960'
+    # link = 'www.chemistwarehouse.com.au/buy/65964'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
     #
-    #     # Product not found:
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
+    # # Product not found:
+    # link = 'https://www.chemistwarehouse.com.au/buy/65965'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65962'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65970'
+
     print(check_data(link))
