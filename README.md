@@ -37,7 +37,10 @@
     - [ ]   Supermarket (Eg.Coles, WoolWorth etc)
     - [ ]   To be continue
 
+
 ``python manage.py runserver 9999``
+
+``nohup python manage.py runserver 9999 &``
 ***
 
 ### DataBase Structure:
