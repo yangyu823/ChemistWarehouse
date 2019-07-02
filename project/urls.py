@@ -25,6 +25,6 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     # url(r'^api-auth/', include('rest_framework.urls')),
     # url(r'^test/', views.TestPost),
-    # url(r'^test2/', views.TestGet),
-    # url(r'^api/', views.NewAPI)
+    url(r'^test2/', views.TestGet),
+    url(r'^api/', views.NewAPI)
 ]

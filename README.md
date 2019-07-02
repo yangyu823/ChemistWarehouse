@@ -39,8 +39,11 @@
     - [ ]   To be continue
 
 ``python manage.py runserver 9999``
+Normal Run
+
 
 ``nohup python manage.py runserver 9999 &``
+Run at background
 ***
 
 ### DataBase Structure:
