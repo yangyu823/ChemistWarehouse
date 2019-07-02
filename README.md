@@ -44,6 +44,15 @@ Normal Run
 
 ``nohup python manage.py runserver 9999 &``
 Run at background
+
+
+####API address&port:
+``http://127.0.0.1:9999/api/``  Main API
+
+``http://127.0.0.1:9999/testGet/`` Test Get API(Return ``Hello world``)
+
+``http://127.0.0.1:9999/testPost/`` Test Post API(Return ``PostBody``)
+
 ***
 
 ### DataBase Structure:

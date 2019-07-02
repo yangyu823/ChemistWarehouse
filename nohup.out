@@ -1,3 +1,61 @@
 Watching for file changes with StatReloader
 
 
+Traceback (most recent call last):
+  File "manage.py", line 10, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 16, in main
+    ) from exc
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+[02/Jul/2019 00:59:18] "POST /api/ HTTP/1.1" 200 318
+Method Not Allowed: /api/backend
+[02/Jul/2019 01:00:35] "GET /api/backend HTTP/1.1" 405 5597
+[02/Jul/2019 01:00:40] "OPTIONS /api/backend HTTP/1.1" 200 5864
+[02/Jul/2019 01:00:41] "OPTIONS /api/backend HTTP/1.1" 200 5864
+[02/Jul/2019 01:00:42] "OPTIONS /api/backend HTTP/1.1" 200 5864
+[02/Jul/2019 01:00:48] "POST /api/ HTTP/1.1" 200 318
+/Users/yu/Desktop/PriceTracker/project/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 02, 2019 - 00:59:12
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+Watching for file changes with StatReloader
+[02/Jul/2019 01:03:41] "POST /testPost/ HTTP/1.1" 200 39
+[02/Jul/2019 01:05:03] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:05:22] "POST /api/ HTTP/1.1" 200 31
+[02/Jul/2019 01:05:29] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:11:19] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:13:33] "POST /api/ HTTP/1.1" 200 318
+Bad Request: /api/
+[02/Jul/2019 01:18:45] "POST /api/ HTTP/1.1" 400 43
+Bad Request: /api/
+[02/Jul/2019 01:20:27] "POST /api/ HTTP/1.1" 400 43
+[02/Jul/2019 01:20:53] "POST /api/ HTTP/1.1" 200 318
+Bad Request: /api/
+[02/Jul/2019 01:20:56] "POST /api/ HTTP/1.1" 400 43
+Bad Request: /api/
+[02/Jul/2019 01:22:26] "POST /api/ HTTP/1.1" 400 43
+[02/Jul/2019 01:27:12] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:27:20] "POST /api/ HTTP/1.1" 200 318
+Bad Request: /api/
+[02/Jul/2019 01:28:13] "POST /api/ HTTP/1.1" 400 43
+Bad Request: /api/
+[02/Jul/2019 01:28:13] "POST /api/ HTTP/1.1" 400 43
+[02/Jul/2019 01:29:16] "OPTIONS /api/ HTTP/1.1" 200 166
+[02/Jul/2019 01:29:20] "OPTIONS /api/ HTTP/1.1" 200 166
+[02/Jul/2019 01:30:04] "OPTIONS /api/ HTTP/1.1" 200 166
