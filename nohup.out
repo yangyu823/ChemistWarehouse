@@ -59,3 +59,727 @@ Bad Request: /api/
 [02/Jul/2019 01:29:16] "OPTIONS /api/ HTTP/1.1" 200 166
 [02/Jul/2019 01:29:20] "OPTIONS /api/ HTTP/1.1" 200 166
 [02/Jul/2019 01:30:04] "OPTIONS /api/ HTTP/1.1" 200 166
+Watching for file changes with StatReloader
+[02/Jul/2019 01:46:13] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:46:13] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:46:54] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:46:55] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:47:10] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:47:10] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:50:06] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:50:06] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:53:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:53:22] "POST /api/ HTTP/1.1" 200 35
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 64718)
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+[02/Jul/2019 01:53:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:53:35] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:53:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:53:56] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:54:06] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:54:06] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 01:54:47] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 01:54:56] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 01:55:00] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 01:55:01] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:28:17] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:28:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:28:21] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:28:37] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:28:40] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:28:41] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:29:11] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:29:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:29:20] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:29:41] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:29:54] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:29:58] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:30:08] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:30:14] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:30:16] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:30:25] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:30:47] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:30:47] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:35:42] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:35:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:35:46] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:37:03] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:37:05] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:37:06] "POST /api/ HTTP/1.1" 200 31
+[02/Jul/2019 02:38:50] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:38:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:38:56] "POST /api/ HTTP/1.1" 200 31
+[02/Jul/2019 02:39:10] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:39:11] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:39:12] "POST /api/ HTTP/1.1" 200 280
+[02/Jul/2019 02:39:42] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:39:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:39:46] "POST /api/ HTTP/1.1" 200 280
+[02/Jul/2019 02:40:13] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:40:22] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:40:24] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:40:25] "POST /api/ HTTP/1.1" 200 280
+[02/Jul/2019 02:40:32] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:40:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:40:35] "POST /api/ HTTP/1.1" 200 280
+[02/Jul/2019 02:41:08] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:41:34] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:41:39] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:41:40] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 02:41:43] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 02:41:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 02:41:46] "POST /api/ HTTP/1.1" 200 31
+[02/Jul/2019 02:41:50] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:29:45] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:29:55] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:30:11] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:30:16] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:30:16] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:30:32] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:30:36] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:30:36] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:30:51] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:31:17] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:31:26] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:31:29] "OPTIONS /api/ HTTP/1.1" 200 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 02, 2019 - 01:45:57
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'Result': 'Page Does Not Exist !'}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+ https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+                https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+ https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+ https://www.chemistwarehouse.com.au/buy/65962
+{'Result': 'Product Not Found'}
+ https://www.chemistwarehouse.com.au/buy/65962
+{'Result': 'Product Not Found'}
+ www.chemistwarehouse.com.au/buy/65964
+{'id': '2627137', 'vendor': 'ChemistWarehouse', 'name': 'Ansell Skyn Extra Lube Condoms 10 Pack', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65964/3DF_800.jpg', 'price_history': {'Jun-16-2019': 7.49, 'Jun-20-2019': 7.49, 'Jun-21-2019': 9.49, 'Jul-02-2019': 9.49}}
+www.chemistwarehouse.com.au/buy/65964
+{'id': '2627137', 'vendor': 'ChemistWarehouse', 'name': 'Ansell Skyn Extra Lube Condoms 10 Pack', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65964/3DF_800.jpg', 'price_history': {'Jun-16-2019': 7.49, 'Jun-20-2019': 7.49, 'Jun-21-2019': 9.49, 'Jul-02-2019': 9.49}}
+ www.chemistwarehouse.com.au/buy/65964
+{'id': '2627137', 'vendor': 'ChemistWarehouse', 'name': 'Ansell Skyn Extra Lube Condoms 10 Pack', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65964/3DF_800.jpg', 'price_history': {'Jun-16-2019': 7.49, 'Jun-20-2019': 7.49, 'Jun-21-2019': 9.49, 'Jul-02-2019': 9.49}}
+ www.chemistwarehouse.com.au/buy/65964
+{'id': '2627137', 'vendor': 'ChemistWarehouse', 'name': 'Ansell Skyn Extra Lube Condoms 10 Pack', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65964/3DF_800.jpg', 'price_history': {'Jun-16-2019': 7.49, 'Jun-20-2019': 7.49, 'Jun-21-2019': 9.49, 'Jul-02-2019': 9.49}}
+ https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99}}
+ https://www.chemistwarehouse.com.au/buy/659662
+{'Result': 'Product Not Found'}
+ Thomas
+{'Result': 'Page Does Not Exist !'}
+ Thomas
+{'Result': 'Page Does Not Exist !'}
+ Thomas
+{'Result': 'Page Does Not Exist !'}[02/Jul/2019 03:31:29] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:31:53] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:31:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:31:57] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 03:33:17] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:33:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:33:21] "POST /api/ HTTP/1.1" 200 31
+[02/Jul/2019 03:33:54] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:34:36] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:34:47] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:35:04] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:35:09] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:35:12] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:35:12] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 03:41:23] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:42:35] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:42:44] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:42:44] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:43:15] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:43:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:43:20] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:43:59] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:44:02] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:44:02] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:45:06] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:45:17] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:45:34] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:45:34] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:46:52] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:46:57] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:47:03] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:47:03] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:47:10] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:47:10] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:47:57] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:48:09] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:48:26] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:48:29] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:48:29] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:48:52] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:48:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:48:56] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:49:03] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:49:03] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:49:18] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:49:18] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 03:49:44] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:50:01] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:50:25] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:53:22] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:53:22] "POST /api/ HTTP/1.1" 200 35
+[02/Jul/2019 03:53:33] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:53:33] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 03:55:22] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:56:00] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:56:28] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:57:06] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:57:12] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:57:12] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 03:58:05] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:58:13] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 03:58:17] "OPTIONS /api/ HTTP/1.1" 200 0
+[02/Jul/2019 03:58:17] "POST /api/ HTTP/1.1" 200 318
+[02/Jul/2019 04:55:28] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 04:55:37] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 04:55:44] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 04:56:35] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 04:56:36] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 04:56:37] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 05:45:28] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 05:45:30] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 06:12:39] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 06:12:44] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 06:23:23] "GET /testGet/ HTTP/1.1" 200 13
+[02/Jul/2019 06:23:25] "GET /testGet/ HTTP/1.1" 200 13
+Watching for file changes with StatReloader
+[03/Jul/2019 00:14:37] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 00:36:18] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 00:36:37] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 00:36:37] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 00:37:27] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 00:37:27] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 00:37:34] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 00:37:34] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 01:35:34] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 01:41:37] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 01:41:42] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 01:42:04] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:31:01] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:31:47] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:31:48] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:32:20] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:32:22] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:32:23] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:32:58] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:33:04] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:33:05] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:33:57] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:34:02] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:34:02] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:34:19] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:34:22] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:34:22] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:35:05] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:35:09] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:35:10] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:35:13] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:35:13] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 02:35:13] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:35:16] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:37:19] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:37:24] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:37:24] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:37:36] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:37:39] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:37:39] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:37:57] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:37:59] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:37:59] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:38:10] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:38:21] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:38:21] "POST /api/ HTTP/1.1" 200 339
+[03/Jul/2019 02:39:36] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:39:46] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 02:39:57] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 02:39:58] "POST /api/ HTTP/1.1" 200 339
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 00:13:56
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+                https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+ 
+{'Result': 'Page Does Not Exist !'}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'Result': 'Page Does Not Exist !'}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': {'Jun-17-2019': 3.15, 'Jun-18-2019': 3.15, 'Jun-20-2019': 3.15, 'Jun-21-2019': 5.99, 'Jul-02-2019': 5.99, 'Jul-03-2019': 5.99}}
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 02:46:59
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 02:47:12
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 02:50:15
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 12, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 03:02:03
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 03:02:15
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[03/Jul/2019 03:03:12] "POST /api/ HTTP/1.1" 200 453
