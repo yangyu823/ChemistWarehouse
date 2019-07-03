@@ -9,6 +9,7 @@ import json
 from datetime import datetime
 from selenium import webdriver
 from backend.Price_get.fuc_agent import get_agent
+# from fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -77,17 +78,17 @@ def get_data(vendor, product_id, product_name, product_img):
         #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
         cursor.execute(sql_get_query, (product_id, vendor))
         records = cursor.fetchall()
+        newList = []
         result = {}
-        history = {}
         result["id"] = product_id
         result["vendor"] = vendor
         result["name"] = product_name
         result["img"] = product_img
         for row in records:
-            history[row[1].strftime("%b-%d-%Y")] = row[0]
-        result["price_history"] = history
+            newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
+        result["price_history"] = newList
         record_final = json.dumps(result)
-        # print(record_final)
+        print(record_final)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
     return result
@@ -180,17 +181,18 @@ def check_data(url):
     except Exception:
         return {"Result": "Page Does Not Exist !"}
 
+
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
-#     # link = 'www.chemistwarehouse.com.au/buy/65964'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
-#
-#     # Product not found:
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-#     print(check_data(link))
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
+    #     # link = 'www.chemistwarehouse.com.au/buy/65964'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
+    #
+    #     # Product not found:
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
+    #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
+    # check_data(link)
