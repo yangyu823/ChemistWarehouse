@@ -19,8 +19,8 @@
             - [x] 4.Return history product price dataset
     - [ ]   Stage Three   (Website and Database host on cloud)
         - [ ] Heroku Database setup
-        - [ ] Basic Frontend portal
-            - [ ] Design phase
+        - [x] Basic Frontend portal
+            - [x] Design phase
         - [ ] Travis CI integration and auto deploy to Heroku
         
     - [ ]   Stage Four (Back-end Polish and Automation)
@@ -30,7 +30,7 @@
         - [ ] `[API_1]` Price dataset from All vendor
         
     - [ ]   Stage Five  (Front-end Polish and D3js)
-        - [ ] Line graph to demo the price history
+        - [x] Line graph to demo the price history
         - [ ] Front-end the product page
 - [ ]   __No.2    Other website Price Add-on__
     - [ ]   Supplements website (Eg.MyChemist,PriceLine etc)

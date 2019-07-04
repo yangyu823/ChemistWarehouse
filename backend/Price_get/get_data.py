@@ -9,6 +9,7 @@ import json
 from datetime import datetime
 from selenium import webdriver
 from backend.Price_get.fuc_agent import get_agent
+
 # from fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -88,26 +89,6 @@ def get_data(vendor, product_id, product_name, product_img):
             newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
         result["price_history"] = newList
 
-        #
-
-        #     SELECT
-        #     max(date) as recent, price
-        #     from product_history inner
-        #     join(
-        #         select
-        #     MIN(price) as MinScore
-        #     from product_history
-        #         where
-        #     product_id = 2626976) MinPrice
-        #     on
-        #     product_history.price = MinPrice.MinScore
-        # and product_history.product_id = 2626976
-        # group
-        # by
-        # price;
-
-        #
-        # print("start")
         sql_get_minprice = """SELECT MAX(`date`) as recent, price FROM product_history inner 
         join(SELECT MIN(`price`) as MinScore FROM `product_history` WHERE product_id = %s AND vendor = %s) MinPrice
         on product_history.price = MinPrice.MinScore AND product_history.product_id = %s GROUP by price"""
@@ -123,10 +104,6 @@ def get_data(vendor, product_id, product_name, product_img):
         recordCurrent = cursor.fetchall()
         result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
 
-        # sql_get_maxyear = """SELECT MAX(`date`) FROM `product_history` WHERE product_id = %s AND vendor = %s"""
-        # cursor.execute(sql_get_maxyear, (product_id, vendor))
-        # recordyear = cursor.fetchall()
-        # result["lowest"] = "$" + str(recordprice[0][0]) + "(" + str(recordyear[0][0]) + ")"
         # record_final = json.dumps(result, separators=(',', ':'))
         # print(result)
     except mysql.connector.Error as error:
@@ -220,7 +197,6 @@ def check_data(url):
             # product_img = get_image(url)
     except Exception:
         return {"Result": "Page Does Not Exist !"}
-
 
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'
