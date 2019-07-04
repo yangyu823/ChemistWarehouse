@@ -42,8 +42,8 @@ def NewAPI(data):
     try:
         url = json.loads(data.body)
         result = check_data(url)
-        print(url)
-        print(result)
+        # print(url)
+        # print(result)
         return JsonResponse(result, safe=False)
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)

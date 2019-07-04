@@ -50,7 +50,7 @@ def check_data(url):
     except:
         return "Error"
 
-    print(url)
+    # print(url)
 
     #   Link page validation
 
@@ -77,4 +77,4 @@ if __name__ == '__main__':
     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
 
-    print(check_data(link))
+    # print(check_data(link))

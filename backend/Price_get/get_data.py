@@ -87,8 +87,48 @@ def get_data(vendor, product_id, product_name, product_img):
         for row in records:
             newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
         result["price_history"] = newList
-        record_final = json.dumps(result)
-        print(record_final)
+
+        #
+
+        #     SELECT
+        #     max(date) as recent, price
+        #     from product_history inner
+        #     join(
+        #         select
+        #     MIN(price) as MinScore
+        #     from product_history
+        #         where
+        #     product_id = 2626976) MinPrice
+        #     on
+        #     product_history.price = MinPrice.MinScore
+        # and product_history.product_id = 2626976
+        # group
+        # by
+        # price;
+
+        #
+        # print("start")
+        sql_get_minprice = """SELECT MAX(`date`) as recent, price FROM product_history inner 
+        join(SELECT MIN(`price`) as MinScore FROM `product_history` WHERE product_id = %s AND vendor = %s) MinPrice
+        on product_history.price = MinPrice.MinScore AND product_history.product_id = %s GROUP by price"""
+        # WHERE product_id = %s AND vendor = %s
+        cursor.execute(sql_get_minprice, (product_id, vendor, product_id))
+        recordprice = cursor.fetchall()
+        result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ")"
+
+        sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
+        join(SELECT MAX(`date`) as CurDate FROM `product_history` WHERE product_id = %s AND vendor = %s) CurPrice
+        on product_history.date = CurPrice.CurDate AND product_history.product_id = %s GROUP by price"""
+        cursor.execute(sql_get_curprice, (product_id, vendor, product_id))
+        recordCurrent = cursor.fetchall()
+        result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
+
+        # sql_get_maxyear = """SELECT MAX(`date`) FROM `product_history` WHERE product_id = %s AND vendor = %s"""
+        # cursor.execute(sql_get_maxyear, (product_id, vendor))
+        # recordyear = cursor.fetchall()
+        # result["lowest"] = "$" + str(recordprice[0][0]) + "(" + str(recordyear[0][0]) + ")"
+        # record_final = json.dumps(result, separators=(',', ':'))
+        # print(result)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
     return result
@@ -184,15 +224,15 @@ def check_data(url):
 
 # if __name__ == '__main__':
 #     link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
-    #     # link = 'www.chemistwarehouse.com.au/buy/65964'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
-    #
-    #     # Product not found:
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-    # check_data(link)
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65960'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65970'
+#     # link = 'www.chemistwarehouse.com.au/buy/65964'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65961/sdlfjsdf'
+#
+#     # Product not found:
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
+#     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
+# check_data(link)

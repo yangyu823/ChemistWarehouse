@@ -783,3 +783,585 @@ Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 [03/Jul/2019 03:03:12] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:26:30] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:26:41] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:26:41] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:27:11] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:27:13] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:27:13] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:27:22] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:27:24] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:27:25] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:28:11] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:28:16] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:28:17] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:28:45] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:28:47] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:28:48] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 03:29:23] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 03:29:25] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 03:29:26] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:06:54] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:31:43] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:41:59] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:42:00] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 04:42:00] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 04:42:31] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:42:42] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:42:44] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 04:42:51] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:42:58] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:43:27] "GET /testGet/ HTTP/1.1" 200 13
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 03:03:03
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+                https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+ 
+{'Result': 'Page Does Not Exist !'}
+ 
+{'Result': 'Page Does Not Exist !'}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}[03/Jul/2019 04:43:30] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:43:45] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:43:48] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:43:54] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:44:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 04:44:20] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:44:38] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:44:40] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 04:44:40] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:45:29] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:45:34] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:45:34] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:45:36] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:46:01] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:46:07] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:46:14] "GET /testGet/ HTTP/1.1" 200 13
+
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}[03/Jul/2019 04:46:16] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:46:57] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:46:59] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:47:03] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:47:06] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:47:15] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:47:17] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:47:31] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:47:33] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:48:18] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:48:22] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:48:53] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:48:54] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 04:48:56] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 04:49:48] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:16:53] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:16:54] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:18:42] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:18:53] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:18:53] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:19:09] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:19:22] "GET /testGet/ HTTP/1.1" 200 13
+
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966[03/Jul/2019 05:19:26] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:20:08] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:20:10] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:20:11] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:21:28] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:21:32] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:21:32] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:22:39] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:23:16] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:23:39] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:23:53] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:23:54] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:24:09] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:24:13] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:24:14] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:24:32] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:24:36] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:24:46] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:24:49] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:24:55] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:24:58] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:25:10] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:25:13] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:26:06] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:26:08] "OPTIONS /api/ HTTP/1.1" 200 0
+
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}[03/Jul/2019 05:26:08] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:26:12] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:26:14] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:27:02] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:27:20] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:27:48] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:31:23] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:31:24] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:31:25] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:31:26] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:31:46] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:31:49] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:31:49] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:32:00] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:32:19] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:33:08] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:33:08] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:34:46] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:34:57] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:34:58] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:35:18] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:35:20] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:35:20] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:35:52] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:36:00] "OPTIONS /api/ HTTP/1.1" 200 0
+
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}[03/Jul/2019 05:36:01] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:37:05] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:37:30] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:37:33] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:37:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:37:36] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:37:45] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:37:47] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:37:48] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:38:34] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:38:44] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:38:45] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:40:04] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:40:21] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:40:21] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:42:28] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:42:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:42:36] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:42:58] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:43:00] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:43:00] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:43:06] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:43:08] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:43:08] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:44:34] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:44:37] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:44:37] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:45:18] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:45:22] "OPTIONS /api/ HTTP/1.1" 200 0
+
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+        // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966[03/Jul/2019 05:45:23] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:45:51] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:46:38] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:46:52] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:46:59] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:46:59] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:47:56] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:47:58] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:47:59] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:48:33] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:48:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:48:35] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:48:44] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:49:33] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:49:36] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:49:37] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:50:35] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:50:53] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:50:53] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:51:26] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:51:29] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:51:31] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:51:31] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 05:51:32] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:51:38] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:51:40] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:51:40] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:52:37] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:52:37] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 05:52:40] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:52:42] "OPTIONS /api/ HTTP/1.1" 200 0
+
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'Result': 'Page Does Not Exist !'}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+ 
+{'Result': 'Page Does Not Exist !'}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}[03/Jul/2019 05:52:42] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:54:45] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:54:53] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:54:55] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:55:29] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:55:31] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:55:31] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:56:12] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:56:16] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:56:16] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:56:31] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:56:34] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:56:34] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:56:44] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:56:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:56:46] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:57:25] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:57:27] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:57:27] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:59:33] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:59:36] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:59:37] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 05:59:45] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 05:59:49] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 05:59:49] "POST /api/ HTTP/1.1" 200 453
+[03/Jul/2019 06:00:10] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:00:14] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:00:17] "POST /api/ HTTP/1.1" 200 35
+[03/Jul/2019 06:00:53] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:02:21] "OPTIONS /api/ HTTP/1.1" 200 0
+
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}]}
+    // https://www.chemistwarehouse.com.au/buy/65966
+{'Result': 'Page Does Not Exist !'}
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}]}[03/Jul/2019 06:02:21] "POST /api/ HTTP/1.1" 200 453
+Watching for file changes with StatReloader
+[03/Jul/2019 06:33:19] "POST /api/ HTTP/1.1" 200 544
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:32:03
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}], "lowest": "$3.15(2019-07-03)"}
+https://www.chemistwarehouse.com.au/buy/65966
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}], "lowest": "$3.15(2019-07-03)"}
+Watching for file changes with StatReloader
+[03/Jul/2019 06:35:34] "POST /api/ HTTP/1.1" 200 544
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:35:31
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}], 'lowest': '$3.15(2019-07-03)'}
+https://www.chemistwarehouse.com.au/buy/65966
+{"id": "2626976", "vendor": "ChemistWarehouse", "name": "Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml", "img": "https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg", "price_history": [{"date": "Jun-17-2019", "price": 3.15}, {"date": "Jun-18-2019", "price": 3.15}, {"date": "Jun-20-2019", "price": 3.15}, {"date": "Jun-21-2019", "price": 5.99}, {"date": "Jul-02-2019", "price": 5.99}, {"date": "Jul-03-2019", "price": 5.99}], "lowest": "$3.15(2019-07-03)"}
+Watching for file changes with StatReloader
+[03/Jul/2019 06:35:45] "POST /api/ HTTP/1.1" 200 484
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:35:43
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}], 'lowest': '$3.15(2019-07-03)'}
+https://www.chemistwarehouse.com.au/buy/65966
+{'id': '2626976', 'vendor': 'ChemistWarehouse', 'name': 'Lynx Men Antiperspirant Aerosol Deodorant Anarchy 160ml', 'img': 'https://static.chemistwarehouse.com.au/ams/media/pi/65966/2DF_800.jpg', 'price_history': [{'date': 'Jun-17-2019', 'price': 3.15}, {'date': 'Jun-18-2019', 'price': 3.15}, {'date': 'Jun-20-2019', 'price': 3.15}, {'date': 'Jun-21-2019', 'price': 5.99}, {'date': 'Jul-02-2019', 'price': 5.99}, {'date': 'Jul-03-2019', 'price': 5.99}], 'lowest': '$3.15(2019-07-03)'}
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:35:54
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:35:58
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:36:35
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:37:29
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[03/Jul/2019 06:38:05] "POST /api/ HTTP/1.1" 200 510
+[03/Jul/2019 06:38:07] "POST /api/ HTTP/1.1" 200 510
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:38:02
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[03/Jul/2019 06:38:34] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:39:40] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:39:43] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:39:43] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:40:25] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:40:27] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:40:28] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:44:44] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:44:48] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:44:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:44:57] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:45:20] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:45:22] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:45:23] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:45:42] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:46:32] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:46:40] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:46:46] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:46:47] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:46:48] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:47:17] "GET /testGet/ HTTP/1.1" 200 13
+[03/Jul/2019 06:47:19] "OPTIONS /api/ HTTP/1.1" 200 0
+[03/Jul/2019 06:47:20] "POST /api/ HTTP/1.1" 200 484
+[03/Jul/2019 06:47:30] "GET /testGet/ HTTP/1.1" 200 13
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 03, 2019 - 06:38:33
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[04/Jul/2019 00:21:44] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:21:45] "POST /api/ HTTP/1.1" 200 524
+[04/Jul/2019 00:22:55] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:22:56] "POST /api/ HTTP/1.1" 200 286
+[04/Jul/2019 00:23:07] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:23:07] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:23:12] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:23:12] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:23:18] "GET /testGet/ HTTP/1.1" 200 13
+[04/Jul/2019 00:23:19] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:23:20] "POST /api/ HTTP/1.1" 200 286
+[04/Jul/2019 00:23:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:23:57] "POST /api/ HTTP/1.1" 200 273
+[04/Jul/2019 00:24:03] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:24:03] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:24:12] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:24:12] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:24:14] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:24:14] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:24:16] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:24:16] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:24:17] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:24:17] "POST /api/ HTTP/1.1" 200 35
+Bad Request: /api/
+[04/Jul/2019 00:25:00] "POST /api/ HTTP/1.1" 400 56
+[04/Jul/2019 00:25:09] "POST /api/ HTTP/1.1" 200 273
+[04/Jul/2019 00:25:25] "POST /api/ HTTP/1.1" 200 269
+[04/Jul/2019 00:25:43] "POST /api/ HTTP/1.1" 200 262
+[04/Jul/2019 00:26:35] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:26:35] "POST /api/ HTTP/1.1" 200 35
+[04/Jul/2019 00:26:51] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 00:26:52] "POST /api/ HTTP/1.1" 200 391
