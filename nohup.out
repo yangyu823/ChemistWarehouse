@@ -2466,3 +2466,200 @@ Bad Request: /api/
 [04/Jul/2019 07:07:06] "POST /api/ HTTP/1.1" 200 556
 [04/Jul/2019 07:07:21] "GET /testGet/ HTTP/1.1" 200 13
 [04/Jul/2019 07:07:22] "POST /api/ HTTP/1.1" 200 556
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[04/Jul/2019 23:59:21] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 23:59:22] "POST /api/ HTTP/1.1" 200 556
+[04/Jul/2019 23:59:23] "GET /testGet/ HTTP/1.1" 200 13
+[04/Jul/2019 23:59:25] "OPTIONS /api/ HTTP/1.1" 200 0
+[04/Jul/2019 23:59:26] "POST /api/ HTTP/1.1" 200 556
+[04/Jul/2019 23:59:31] "GET /testGet/ HTTP/1.1" 200 13
+[04/Jul/2019 23:59:32] "POST /api/ HTTP/1.1" 200 556
+[04/Jul/2019 23:59:38] "POST /api/ HTTP/1.1" 200 432
+[04/Jul/2019 23:59:46] "POST /api/ HTTP/1.1" 200 442
+[04/Jul/2019 23:59:51] "POST /api/ HTTP/1.1" 200 423
+[04/Jul/2019 23:59:58] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:00:03] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:00:06] "POST /api/ HTTP/1.1" 200 459
+[05/Jul/2019 00:00:10] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:00:15] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:00:19] "POST /api/ HTTP/1.1" 200 457
+[05/Jul/2019 00:00:25] "POST /api/ HTTP/1.1" 200 445
+[05/Jul/2019 00:00:32] "POST /api/ HTTP/1.1" 200 356
+[05/Jul/2019 00:00:36] "POST /api/ HTTP/1.1" 200 357
+[05/Jul/2019 00:00:41] "POST /api/ HTTP/1.1" 200 356
+[05/Jul/2019 00:00:46] "POST /api/ HTTP/1.1" 200 331
+[05/Jul/2019 00:00:51] "POST /api/ HTTP/1.1" 200 368
+Bad Request: /api/
+[05/Jul/2019 00:00:55] "POST /api/ HTTP/1.1" 400 59
+[05/Jul/2019 00:01:02] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:10] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:14] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:20] "POST /api/ HTTP/1.1" 200 368
+[05/Jul/2019 00:01:23] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:28] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:31] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:33] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:38] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:41] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:44] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:46] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:52] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:01:55] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 00:02:11] "POST /api/ HTTP/1.1" 200 596
+[05/Jul/2019 00:04:36] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:04:46] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:04:57] "POST /api/ HTTP/1.1" 200 596
+[05/Jul/2019 00:07:29] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:09:41] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:11:39] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:11:49] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:11:50] "POST /api/ HTTP/1.1" 200 596
+[05/Jul/2019 00:12:05] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:12:28] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:12:36] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:12:36] "POST /api/ HTTP/1.1" 200 596
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 04, 2019 - 23:59:08
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 05, 2019 - 00:21:05
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 05, 2019 - 00:21:20
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[05/Jul/2019 00:21:26] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:21:27] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:24:02] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:24:12] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:24:12] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:24:44] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:24:51] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:24:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:24:57] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:25:20] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:25:23] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:25:23] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:26:47] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:47:36] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:47:47] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:47:53] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:48:01] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:48:02] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:49:34] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:50:56] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:51:23] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:51:27] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:52:37] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:54:08] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:54:54] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:54:54] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 00:55:03] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:56:56] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 00:57:00] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 00:57:01] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:02:23] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:04:14] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:04:47] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:06:02] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:07:56] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:09:15] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:09:36] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:09:42] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:09:51] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:09:51] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:10:22] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:10:24] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:10:24] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:10:43] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:10:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:10:46] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:11:07] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:11:10] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:11:10] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:11:16] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:11:18] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:11:18] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:11:29] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:11:45] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:14:25] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:14:25] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:16:09] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:16:16] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:16:19] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:16:19] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:16:30] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:16:59] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:16:59] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:17:12] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:17:14] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:21:17] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:21:18] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 01:21:22] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:21:23] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 01:21:25] "OPTIONS /api/ HTTP/1.1" 200 0
+Bad Request: /api/
+[05/Jul/2019 01:21:25] "POST /api/ HTTP/1.1" 400 40
+[05/Jul/2019 01:21:30] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:21:31] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:21:40] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:23:13] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:23:21] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:23:22] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:29:51] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:29:52] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:29:56] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:29:57] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 01:29:59] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:29:59] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 01:30:06] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:30:08] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:30:08] "POST /api/ HTTP/1.1" 200 35
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 54139)
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+[05/Jul/2019 01:30:11] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:30:11] "POST /api/ HTTP/1.1" 200 594
+[05/Jul/2019 01:30:13] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:30:13] "POST /api/ HTTP/1.1" 200 31
+[05/Jul/2019 01:30:16] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:30:17] "POST /api/ HTTP/1.1" 200 457
+[05/Jul/2019 01:30:32] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:30:37] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:30:38] "POST /api/ HTTP/1.1" 200 470
+[05/Jul/2019 01:33:33] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:33:43] "GET /testGet/ HTTP/1.1" 200 13
+[05/Jul/2019 01:33:46] "OPTIONS /api/ HTTP/1.1" 200 0
+[05/Jul/2019 01:33:46] "POST /api/ HTTP/1.1" 200 594

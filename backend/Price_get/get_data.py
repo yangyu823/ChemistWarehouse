@@ -71,7 +71,7 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
             connection.rollback()  # rollback if any exception occured
 
 
-def get_data(vendor, product_id, product_name, product_img):
+def get_data(vendor, product_id, product_name, product_img, link_id):
     cursor = connection.cursor()
     record_final = {}
     try:
@@ -81,7 +81,7 @@ def get_data(vendor, product_id, product_name, product_img):
         records = cursor.fetchall()
         newList = []
         result = {}
-        result["id"] = product_id
+        result["id"] = link_id
         result["vendor"] = vendor
         result["name"] = product_name
         result["img"] = product_img
@@ -180,7 +180,7 @@ def check_data(url):
                               time=capture_time, l_id=link_id, update=False, create=True, p_img=product_img)
                     # return {"Result": "No Current Record!"}
 
-                return get_data(product_vendor, product_id, product_name, product_img)
+                return get_data(product_vendor, product_id, product_name, product_img, link_id)
 
             except mysql.connector.Error as error:
                 connection.rollback()  # rollback if any exception occured
