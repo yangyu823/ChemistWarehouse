@@ -8,9 +8,9 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-from backend.Price_get.fuc_agent import get_agent
+# from backend.Price_get.fuc_agent import get_agent
 
-# from fuc_agent import get_agent
+from fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -105,7 +105,7 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
         result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
 
         # record_final = json.dumps(result, separators=(',', ':'))
-        # print(result)
+        print(result)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
     return result
@@ -127,6 +127,16 @@ def check_data(url):
 
     elif "mychemist" in url:
         product_vendor = 'MyChemist'
+        temp_array = url.split("/")
+        temp_count = 0
+
+        while temp_count < len(temp_array):
+            if temp_array[temp_count] == "buy":
+                link_id = temp_array[temp_count + 1]
+                url = "https://www.mychemist.com.au/buy/" + temp_array[temp_count + 1]
+            temp_count += 1
+
+    # Future Vendor
     else:
         product_vendor = 'Unknow'
 
@@ -168,12 +178,6 @@ def check_data(url):
                             insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name,
                                       p_price=product_price,
                                       time=capture_time, l_id=link_id, update=True, create=False, p_img=product_img)
-                            #   pull the history data
-                            # return get_data(product_vendor, product_id, product_name, product_img)
-                        # else:
-                        #   Record up to date
-                        #   pull the history data
-                        # return get_data(product_vendor, product_id, product_name, product_img)
                 else:
                     # Insert Into Databse
                     insert_db(p_id=product_id, p_vendor=product_vendor, p_name=product_name, p_price=product_price,
@@ -198,8 +202,9 @@ def check_data(url):
     except Exception:
         return {"Result": "Page Does Not Exist !"}
 
-# if __name__ == '__main__':
-#     link = 'https://www.chemistwarehouse.com.au/buy/65966'
+if __name__ == '__main__':
+    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    link = 'https://www.mychemist.com.au/buy/65966'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
@@ -211,4 +216,4 @@ def check_data(url):
 #     # Product not found:
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-# check_data(link)
+check_data(link)
