@@ -45,9 +45,13 @@ Normal Run
 ``nohup python manage.py runserver 9999 &``
 Run at background
 
+Option:
+Adding Firebase login with Company
 
 ####API address&port:
 ``http://127.0.0.1:9999/api/``  Main API
+
+Passing URL to get product info and price history
 
 ``http://127.0.0.1:9999/testGet/`` Test Get API(Return ``Hello world``)
 
