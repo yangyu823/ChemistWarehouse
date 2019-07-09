@@ -8,9 +8,9 @@ import mysql.connector
 import json
 from datetime import datetime
 from selenium import webdriver
-# from backend.Price_get.fuc_agent import get_agent
+from backend.Price_get.fuc_agent import get_agent
 
-from fuc_agent import get_agent
+# from fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -75,34 +75,40 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
     cursor = connection.cursor()
     record_final = {}
     try:
-        sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
-        #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-        cursor.execute(sql_get_query, (product_id, vendor))
-        records = cursor.fetchall()
-        newList = []
-        result = {}
-        result["id"] = link_id
-        result["vendor"] = vendor
-        result["name"] = product_name
-        result["img"] = product_img
-        for row in records:
-            newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
-        result["price_history"] = newList
+        result = {"id": link_id, "vendor": vendor, "name": product_name, "img": product_img}
+        sql_get_vendor_list = """SELECT DISTINCT `vendor` From `product_history` where product_id =%s"""
+        cursor.execute(sql_get_vendor_list, (product_id,))
+        vendor_list = cursor.fetchall()
+        for rows in vendor_list:
 
-        sql_get_minprice = """SELECT MAX(`date`) as recent, price FROM product_history inner 
-        join(SELECT MIN(`price`) as MinScore FROM `product_history` WHERE product_id = %s AND vendor = %s) MinPrice
-        on product_history.price = MinPrice.MinScore AND product_history.product_id = %s GROUP by price"""
+            sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
+            #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
+            cursor.execute(sql_get_query, (product_id, rows[0]))
+            records = cursor.fetchall()
+            new_list = []
+
+            for row in records:
+                new_list.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
+            result[rows[0]] = new_list
+
+        sql_get_minprice = """SELECT date,price,vendor from product_history inner join(
+        SELECT MAX(`date`) as recent, price as recent_price FROM product_history inner 
+        join(SELECT MIN(`price`) as MinScore FROM `product_history` WHERE product_id = %s) MinPrice
+        on product_history.price = MinPrice.MinScore AND product_history.product_id = %s GROUP by price) PriceResult ON 
+        product_history.date = PriceResult.recent and product_history.price = PriceResult.recent_price"""
         # WHERE product_id = %s AND vendor = %s
-        cursor.execute(sql_get_minprice, (product_id, vendor, product_id))
+        cursor.execute(sql_get_minprice, (product_id, product_id))
         recordprice = cursor.fetchall()
-        result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ")"
+        result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ") From " + str(
+            recordprice[0][2])
 
-        sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
-        join(SELECT MAX(`date`) as CurDate FROM `product_history` WHERE product_id = %s AND vendor = %s) CurPrice
-        on product_history.date = CurPrice.CurDate AND product_history.product_id = %s GROUP by price"""
-        cursor.execute(sql_get_curprice, (product_id, vendor, product_id))
-        recordCurrent = cursor.fetchall()
-        result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
+        # Current Price Redundant
+        # sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
+        # join(SELECT MAX(`date`) as CurDate FROM `product_history` WHERE product_id = %s AND vendor = %s) CurPrice
+        # on product_history.date = CurPrice.CurDate AND product_history.product_id = %s GROUP by price"""
+        # cursor.execute(sql_get_curprice, (product_id, vendor, product_id))
+        # recordCurrent = cursor.fetchall()
+        # result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
 
         # record_final = json.dumps(result, separators=(',', ':'))
         print(result)
@@ -202,9 +208,9 @@ def check_data(url):
     except Exception:
         return {"Result": "Page Does Not Exist !"}
 
-if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    link = 'https://www.mychemist.com.au/buy/65966'
+# if __name__ == '__main__':
+#     link = 'https://www.chemistwarehouse.com.au/buy/65966'
+#     link = 'https://www.mychemist.com.au/buy/65966'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
@@ -216,4 +222,4 @@ if __name__ == '__main__':
 #     # Product not found:
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-check_data(link)
+# check_data(link)

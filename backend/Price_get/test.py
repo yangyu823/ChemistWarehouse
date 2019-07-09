@@ -75,25 +75,27 @@ def get_data(vendor, p_id, product_name, product_img, link_id):
     cursor = connection.cursor()
     record_final = {}
     try:
-        sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = (2626976) """
-
-        #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
-        cursor.execute(sql_get_query)
-        print(p_id)
-
-        records = cursor.fetchall()
-        newList = []
         result = {}
-        print("Reach there")
-        # result["id"] = link_id
-        # result["vendor"] = vendor
-        # result["name"] = product_name
-        # result["img"] = product_img
-        for row in records:
-            newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
-        # result[vendor] = newList
+        sql_get_vendor_list = """SELECT DISTINCT `vendor` From `product_history` where product_id =(2626976)"""
+        cursor.execute(sql_get_vendor_list)
+        vendor_list = cursor.fetchall()
+        for rows in vendor_list:
+            sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = (2626976) and vendor =%s """
 
-        print(newList)
+            #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
+            cursor.execute(sql_get_query, (rows[0],))
+            records = cursor.fetchall()
+            newList = []
+            print(rows[0])
+            # result["id"] = link_id
+            # result["vendor"] = vendor
+            # result["name"] = product_name
+            # result["img"] = product_img
+            for row in records:
+                newList.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
+            result[rows[0]] = newList
+
+        print(result)
 
         # sql_get_minprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
         # join(SELECT MIN(`price`) as MinScore FROM `product_history` WHERE product_id = %s AND vendor = %s) MinPrice
