@@ -76,11 +76,12 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
     record_final = {}
     try:
         result = {"id": link_id, "vendor": vendor, "name": product_name, "img": product_img}
+        vendor_new_list = []
         sql_get_vendor_list = """SELECT DISTINCT `vendor` From `product_history` where product_id =%s"""
         cursor.execute(sql_get_vendor_list, (product_id,))
         vendor_list = cursor.fetchall()
         for rows in vendor_list:
-
+            vendor_new_list.append(rows[0])
             sql_get_query = """SELECT `price`,`date` FROM `product_history` WHERE product_id = %s AND vendor = %s"""
             #   cursor.execute(sql_insert_query, (link_id,))  standard format:  (variable,)     !!!!!
             cursor.execute(sql_get_query, (product_id, rows[0]))
@@ -88,7 +89,9 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
             new_list = []
 
             for row in records:
-                new_list.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
+                # new_list.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
+                # new_list.append({'date': row[1].strftime("%Y%m%d"), 'price': row[0]})
+                new_list.append({'date': row[1].strftime("%d/%m/%Y"), 'price': row[0]})
             result[rows[0]] = new_list
 
         sql_get_minprice = """SELECT date,price,vendor from product_history inner join(
@@ -101,6 +104,7 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
         recordprice = cursor.fetchall()
         result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ") From " + str(
             recordprice[0][2])
+        result["vendor_list"] = vendor_new_list,
 
         # Current Price Redundant
         # sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
@@ -111,7 +115,7 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
         # result["current"] = "$" + str(recordCurrent[0][1]) + "(" + str(recordCurrent[0][0]) + ")"
 
         # record_final = json.dumps(result, separators=(',', ':'))
-        print(result)
+        # print(result)
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
     return result
