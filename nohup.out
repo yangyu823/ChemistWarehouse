@@ -3711,3 +3711,569 @@ July 10, 2019 - 00:56:17
 Django version 2.2.1, using settings 'project.settings'
 Starting development server at http://127.0.0.1:9999/
 Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 10, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 16, in main
+    ) from exc
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+[10/Jul/2019 23:38:56] "GET /testGet/ HTTP/1.1" 200 13
+[10/Jul/2019 23:39:02] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:39:13] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:39:15] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:39:19] "POST /api/ HTTP/1.1" 200 873
+[10/Jul/2019 23:39:38] "POST /api/ HTTP/1.1" 200 873
+[10/Jul/2019 23:39:46] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:39:48] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:40:47] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:40:48] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:40:52] "POST /api/ HTTP/1.1" 200 873
+[10/Jul/2019 23:40:54] "POST /api/ HTTP/1.1" 200 873
+[10/Jul/2019 23:41:11] "POST /api/ HTTP/1.1" 200 873
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:38:52
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[10/Jul/2019 23:46:21] "POST /api/ HTTP/1.1" 200 24
+[10/Jul/2019 23:46:26] "POST /api/ HTTP/1.1" 200 24
+[10/Jul/2019 23:47:09] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:47:15] "POST /api/ HTTP/1.1" 200 401
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:46:16
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 11, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[10/Jul/2019 23:50:07] "POST /api/ HTTP/1.1" 200 401
+[10/Jul/2019 23:50:11] "POST /api/ HTTP/1.1" 200 24
+[10/Jul/2019 23:50:19] "GET /testGet/ HTTP/1.1" 200 13
+[10/Jul/2019 23:50:23] "POST /api/ HTTP/1.1" 200 24
+[10/Jul/2019 23:51:28] "POST /api/ HTTP/1.1" 200 401
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:49:49
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[10/Jul/2019 23:52:42] "POST /api/ HTTP/1.1" 200 436
+[10/Jul/2019 23:52:57] "POST /api/ HTTP/1.1" 200 436
+[10/Jul/2019 23:53:01] "POST /api/ HTTP/1.1" 200 24
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:52:28
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:53:57
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:54:07
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /testGet/
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/http/response.py", line 51, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/rest_framework/decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 54, in TestGet
+    return Response(result, datetime.now())
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/rest_framework/response.py", line 32, in __init__
+    super(Response, self).__init__(None, status=status)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/http/response.py", line 289, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/http/response.py", line 53, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[10/Jul/2019 23:54:12] "GET /testGet/ HTTP/1.1" 500 15042
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:54:12
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[10/Jul/2019 23:54:21] "GET /testGet/ HTTP/1.1" 200 28
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:54:20
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:54:34
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[10/Jul/2019 23:58:14] "GET /testGet/ HTTP/1.1" 200 13
+Not Found: /time/
+[10/Jul/2019 23:58:28] "GET /time/ HTTP/1.1" 404 2438
+/Users/yu/Desktop/PriceTracker/project/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2019 - 23:54:56
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Jul/2019 00:00:15] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 00:31:46] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 00:35:04] "GET /time/ HTTP/1.1" 200 28
+/Users/yu/Desktop/PriceTracker/project/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 11, 2019 - 00:00:13
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Jul/2019 10:40:46] "GET /time/ HTTP/1.1" 200 28
+/Users/yu/Desktop/PriceTracker/project/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 11, 2019 - 10:40:41
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Jul/2019 10:41:14] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:15] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:16] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:19] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:20] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:21] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:22] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:22] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:42] "GET /time/ HTTP/1.1" 200 28
+/Users/yu/Desktop/PriceTracker/project/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 11, 2019 - 10:41:10
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Jul/2019 10:41:50] "GET /time/ HTTP/1.1" 200 28
+[11/Jul/2019 10:41:54] "POST /api/ HTTP/1.1" 200 475
+[11/Jul/2019 10:42:11] "POST /api/ HTTP/1.1" 200 947

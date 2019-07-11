@@ -61,9 +61,9 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
     elif update and not create:
         try:
             sql_update_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
-            sql_update_query2 = """ UPDATE `product_cat` SET last_update = %s WHERE link_id = %s """
+            sql_update_query2 = """ UPDATE `product_cat` SET last_update = %s WHERE link_id = %s AND vendor = %s"""
             p_info = (p_id, p_vendor, p_name, p_price, time)
-            c_info = (time, l_id)
+            c_info = (time, l_id, p_vendor)
             cursor.execute(sql_update_query, p_info)
             cursor.execute(sql_update_query2, c_info)
             connection.commit()
@@ -105,6 +105,7 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
         result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ") From " + str(
             recordprice[0][2])
         result["vendor_list"] = vendor_new_list,
+        result["time"] = datetime.now()
 
         # Current Price Redundant
         # sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
@@ -212,10 +213,11 @@ def check_data(url):
     except Exception:
         return {"Result": "Page Does Not Exist !"}
 
+
 # if __name__ == '__main__':
-#     link = 'https://www.chemistwarehouse.com.au/buy/65966'
+    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
 #     link = 'https://www.mychemist.com.au/buy/65966'
-#     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+#     link = 'https://www.chemistwarehouse.com.au/buy/65967'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65969'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65960'

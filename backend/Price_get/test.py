@@ -225,4 +225,5 @@ if __name__ == '__main__':
 #     # Product not found:
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65965'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65962'
-check_data(link)
+# check_data(link)
+print(datetime.now())

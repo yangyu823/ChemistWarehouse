@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from django.core import serializers
 from django.conf import settings
 import json
+from datetime import datetime
 from backend.Price_get.get_data import check_data
 from backend.models import Backend
 from backend.serializers import BackendSerializer
@@ -19,9 +20,6 @@ from rest_framework import generics
 class BackendListCreate(generics.ListCreateAPIView):
     queryset = Backend.objects.all()
     serializer_class = BackendSerializer
-
-
-
 
 
 @api_view(["POST"])
@@ -54,5 +52,12 @@ def TestGet(request):
     try:
         result = "Hello world"
         return Response(result)
+    except ValueError as e:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+@api_view(["GET"])
+def Time(request):
+    try:
+        return Response(datetime.now())
     except ValueError as e:
         return Response(status=status.HTTP_404_NOT_FOUND)

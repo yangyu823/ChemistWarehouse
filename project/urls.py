@@ -18,7 +18,6 @@ from django.urls import path
 from django.conf.urls import url, include
 from backend import views
 
-
 urlpatterns = [
     path('', include('backend.urls')),
     path('admin/', admin.site.urls),
@@ -26,5 +25,7 @@ urlpatterns = [
     # url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^testPost/', views.TestPost),
     url(r'^testGet/', views.TestGet),
-    url(r'^api/', views.NewAPI)
+    url(r'^api/', views.NewAPI),
+    url(r'^time/', views.Time)
+
 ]
