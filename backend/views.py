@@ -10,6 +10,7 @@ from django.conf import settings
 import json
 from datetime import datetime
 from backend.Price_get.get_data import check_data
+from backend.Price_update.update_data import get_list
 from backend.models import Backend
 from backend.serializers import BackendSerializer
 from rest_framework import generics
@@ -55,9 +56,19 @@ def TestGet(request):
     except ValueError as e:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
+
 @api_view(["GET"])
 def Time(request):
     try:
         return Response(datetime.now())
     except ValueError as e:
         return Response(status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(["GET"])
+def Update(request):
+    try:
+        result = get_list()
+        return JsonResponse(result, safe=False)
+    except ValueError as e:
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)

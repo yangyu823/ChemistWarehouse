@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^testPost/', views.TestPost),
     url(r'^testGet/', views.TestGet),
     url(r'^api/', views.NewAPI),
-    url(r'^time/', views.Time)
+    url(r'^time/', views.Time),
+    url(r'^update/', views.Update)
 
 ]
