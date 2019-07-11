@@ -6,6 +6,7 @@ from lxml import html
 from time import sleep
 import mysql.connector
 import json
+import time
 from datetime import datetime
 from selenium import webdriver
 from backend.Price_get.fuc_agent import get_agent
@@ -49,7 +50,10 @@ def insert_db(p_id, p_vendor, p_name, p_price, time, l_id, update, create, p_img
             sql_create_query = """ INSERT INTO `product_history`(`product_id`, `vendor`, `name`, `price`, `date`) VALUES (%s,%s,%s,%s,%s)"""
             sql_create_query2 = """ INSERT INTO `product_cat`(`product_id`, `vendor`, `name`, `last_update`, `link`, `link_id`,`prod_img`) VALUES (%s,%s,%s,%s,%s,%s,%s)"""
             p_info = (p_id, p_vendor, p_name, p_price, time)
-            p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % l_id
+            if p_vendor == "ChemistWarehouse":
+                p_link = 'https://www.chemistwarehouse.com.au/buy/%s' % l_id
+            elif p_vendor == "MyChemist":
+                p_link = 'https://www.mychemist.com.au/buy/%s' % l_id
             c_info = (p_id, p_vendor, p_name, time, p_link, l_id, p_img)
             cursor.execute(sql_create_query, p_info)
             cursor.execute(sql_create_query2, c_info)
@@ -89,9 +93,10 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
             new_list = []
 
             for row in records:
+                new_list.append({'date': time.mktime(row[1].timetuple()) * 1000, 'price': row[0]})
                 # new_list.append({'date': row[1].strftime("%b-%d-%Y"), 'price': row[0]})
                 # new_list.append({'date': row[1].strftime("%Y%m%d"), 'price': row[0]})
-                new_list.append({'date': row[1].strftime("%d/%m/%Y"), 'price': row[0]})
+                # new_list.append({'date': row[1].strftime("%d/%m/%Y"), 'price': row[0]})
             result[rows[0]] = new_list
 
         sql_get_minprice = """SELECT date,price,vendor from product_history inner join(
@@ -105,7 +110,10 @@ def get_data(vendor, product_id, product_name, product_img, link_id):
         result["lowest"] = "$" + str(recordprice[0][1]) + "(" + str(recordprice[0][0]) + ") From " + str(
             recordprice[0][2])
         result["vendor_list"] = vendor_new_list,
-        result["time"] = datetime.now()
+        result["time"] = datetime.now(), time.mktime(datetime.now().timetuple()) * 1000
+
+        # This convert the time object into 13digit time number
+        # time.mktime(datetime.now().timetuple()) * 1000
 
         # Current Price Redundant
         # sql_get_curprice = """SELECT MAX(`date`) as recent, price FROM product_history inner
@@ -213,9 +221,8 @@ def check_data(url):
     except Exception:
         return {"Result": "Page Does Not Exist !"}
 
-
 # if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
+# link = 'https://www.chemistwarehouse.com.au/buy/65966'
 #     link = 'https://www.mychemist.com.au/buy/65966'
 #     link = 'https://www.chemistwarehouse.com.au/buy/65967'
 #     # link = 'https://www.chemistwarehouse.com.au/buy/65968'
