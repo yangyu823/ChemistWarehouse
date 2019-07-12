@@ -1,16 +1,11 @@
-from django.shortcuts import render
-from django.http import Http404
-from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from django.http import JsonResponse
-from django.core import serializers
-from django.conf import settings
 import json
 from datetime import datetime
 from backend.Price_get.get_data import check_data
-from backend.Price_update.update_data import get_list
+from backend.Price_get.update_data import get_list
 from backend.models import Backend
 from backend.serializers import BackendSerializer
 from rest_framework import generics

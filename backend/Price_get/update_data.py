@@ -6,16 +6,11 @@ from lxml import html
 from time import sleep
 import mysql.connector
 import json
-from backend.Price_get.get_data import check_data
+# from backend.Price_get.get_data import check_data
+from get_data import check_data
 from datetime import datetime
 from selenium import webdriver
 
-# from backend.Price_get.fuc_agent import get_agent
-
-# from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
-# 禁用安全请求警告
-# requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 connection = mysql.connector.connect(host='localhost',
                                      port='8889',
@@ -38,8 +33,17 @@ def get_list():
         connection.rollback()  # rollback if any exception occured
     return url_list
 
+def update_price(list):
+    for link in list:
+        # print(link)
+        check_data(link)
+        print(link + "Done")
+        sleep(5)
+
+
+
 
 if __name__ == '__main__':
     # link = 'https://www.chemistwarehouse.com.au/buy/65966'
     #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    print(get_list())
+    update_price(get_list());
