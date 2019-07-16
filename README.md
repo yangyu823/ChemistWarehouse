@@ -21,7 +21,13 @@
         - [ ] Heroku Database setup
         - [x] Basic Frontend portal
             - [x] Design phase
-        - [ ] Travis CI integration and auto deploy to Heroku
+        - [ ] AWS manual deploy 
+            - [x] DNS , EC2 and Nginx setup
+            - [ ] DB preparation
+            - [ ] Backend Env & Code Setup
+            - [ ] Frontend Env & Code Setup
+            - [ ] HTTPS & Certificate setup
+        - [x] <s> Travis CI integration and auto deploy to Heroku <s>
         
     - [ ]   Stage Four (Back-end Polish and Automation)
     
