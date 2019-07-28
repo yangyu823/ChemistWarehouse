@@ -27,7 +27,7 @@
             - [ ] Backend Env & Code Setup
             - [ ] Frontend Env & Code Setup
             - [ ] HTTPS & Certificate setup
-        - [x] <s> Travis CI integration and auto deploy to Heroku <s>
+        - [x] <s> Travis CI integration and auto deploy to Heroku </s>
         
     - [ ]   Stage Four (Back-end Polish and Automation)
     

@@ -6,8 +6,8 @@ from lxml import html
 from time import sleep
 import mysql.connector
 import json
-# from backend.Price_get.get_data import check_data
-from get_data import check_data
+from backend.Price_get.get_data import check_data
+# from get_data import check_data
 from datetime import datetime
 from selenium import webdriver
 
@@ -37,7 +37,7 @@ def update_price(list):
     for link in list:
         # print(link)
         check_data(link)
-        print(link + "Done")
+        print(link + " -- Done")
         sleep(5)
 
 
