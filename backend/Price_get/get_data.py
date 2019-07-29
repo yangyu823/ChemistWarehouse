@@ -10,7 +10,6 @@ import time
 from datetime import datetime
 from selenium import webdriver
 from backend.Price_get.fuc_agent import get_agent
-
 # from fuc_agent import get_agent
 
 # from requests.packages.urllib3.exceptions import InsecureRequestWarning
