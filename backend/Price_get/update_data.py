@@ -6,8 +6,8 @@ from lxml import html
 from time import sleep
 import mysql.connector
 import json
-# from backend.Price_get.get_data import check_data
-from get_data import check_data
+from backend.Price_get.get_data import check_data
+# from get_data import check_data
 from datetime import datetime
 from selenium import webdriver
 
