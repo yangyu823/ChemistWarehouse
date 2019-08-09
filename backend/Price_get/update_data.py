@@ -12,14 +12,12 @@ from datetime import datetime
 from selenium import webdriver
 
 
-connection = mysql.connector.connect(host='localhost',
-                                     port='8889',
-                                     database='price_db',
-                                     user='root',
-                                     password='root')
-
-
 def get_list():
+    connection = mysql.connector.connect(host='localhost',
+                                         port='8889',
+                                         database='price_db',
+                                         user='root',
+                                         password='root')
     cursor = connection.cursor()
     url_list = []
     try:
@@ -31,6 +29,12 @@ def get_list():
         return url_list
     except mysql.connector.Error as error:
         connection.rollback()  # rollback if any exception occured
+
+    finally:
+        # closing database connection.
+        if connection.is_connected():
+            cursor.close()
+            connection.close()
     return url_list
 
 def update_price(list):
@@ -44,6 +48,6 @@ def update_price(list):
 
 
 # if __name__ == '__main__':
-    # link = 'https://www.chemistwarehouse.com.au/buy/65966'
-    #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    # update_price(get_list());
+#     link = 'https://www.chemistwarehouse.com.au/buy/65966'
+#         # link = 'https://www.chemistwarehouse.com.au/buy/65967'
+#     update_price(get_list());

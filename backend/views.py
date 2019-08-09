@@ -66,6 +66,9 @@ def Update(request):
     try:
         result = get_list()
         update_price(result)
-        return JsonResponse(result, safe=False)
+        if not result:
+            return JsonResponse("All data up to date", safe=False)
+        else:
+            return JsonResponse(result, safe=False)
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
