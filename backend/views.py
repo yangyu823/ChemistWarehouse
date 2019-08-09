@@ -6,6 +6,7 @@ import json
 from datetime import datetime
 from backend.Price_get.get_data import check_data
 from backend.Price_get.update_data import get_list
+from backend.Price_get.update_data import update_price
 from backend.models import Backend
 from backend.serializers import BackendSerializer
 from rest_framework import generics
@@ -64,6 +65,7 @@ def Time(request):
 def Update(request):
     try:
         result = get_list()
+        update_price(result)
         return JsonResponse(result, safe=False)
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)

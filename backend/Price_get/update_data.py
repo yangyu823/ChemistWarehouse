@@ -43,7 +43,7 @@ def update_price(list):
 
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # link = 'https://www.chemistwarehouse.com.au/buy/65966'
     #     # link = 'https://www.chemistwarehouse.com.au/buy/65967'
-    update_price(get_list());
+    # update_price(get_list());

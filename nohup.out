@@ -5432,3 +5432,213 @@ ModuleNotFoundError: No module named 'fuc_agent'
 Performing system checks...
 
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 7, in <module>
+    from backend.Price_get.get_data import check_data
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py", line 13, in <module>
+    from fuc_agent import get_agent
+ModuleNotFoundError: No module named 'fuc_agent'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/get_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/yu/anaconda3/envs/pachong/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/yu/Desktop/PriceTracker/project/urls.py", line 19, in <module>
+    from backend import views
+  File "/Users/yu/Desktop/PriceTracker/backend/views.py", line 8, in <module>
+    from backend.Price_get.update_data import get_list
+  File "/Users/yu/Desktop/PriceTracker/backend/Price_get/update_data.py", line 10, in <module>
+    from get_data import check_data
+ModuleNotFoundError: No module named 'get_data'
+
+/Users/yu/Desktop/PriceTracker/backend/Price_get/update_data.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[07/Aug/2019 13:39:24] "GET /time/ HTTP/1.1" 200 28
+[07/Aug/2019 13:39:25] "GET /time/ HTTP/1.1" 200 28
+[07/Aug/2019 13:39:26] "GET /time/ HTTP/1.1" 200 28
+/Users/yu/Desktop/PriceTracker/backend/Price_get/update_data.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 07, 2019 - 13:39:22
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[07/Aug/2019 13:41:24] "GET /update/ HTTP/1.1" 200 1575
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 07, 2019 - 13:39:56
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/yu/Desktop/PriceTracker/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 07, 2019 - 13:42:11
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[07/Aug/2019 13:46:54] "GET /update/ HTTP/1.1" 200 1575
+[07/Aug/2019 13:51:06] "GET /update/ HTTP/1.1" 200 1575
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 07, 2019 - 13:42:35
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+https://www.chemistwarehouse.com.au/buy/65961 -- Done
+https://www.chemistwarehouse.com.au/buy/65966 -- Done
+https://www.chemistwarehouse.com.au/buy/65967 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65969 -- Done
+https://www.chemistwarehouse.com.au/buy/65960 -- Done
+https://www.chemistwarehouse.com.au/buy/65964 -- Done
+https://www.chemistwarehouse.com.au/buy/65959 -- Done
+https://www.chemistwarehouse.com.au/buy/65958 -- Done
+https://www.chemistwarehouse.com.au/buy/65957 -- Done
+https://www.chemistwarehouse.com.au/buy/65956 -- Done
+https://www.chemistwarehouse.com.au/buy/65955 -- Done
+https://www.chemistwarehouse.com.au/buy/82648 -- Done
+https://www.chemistwarehouse.com.au/buy/82647 -- Done
+https://www.chemistwarehouse.com.au/buy/82646 -- Done
+https://www.chemistwarehouse.com.au/buy/82645 -- Done
+https://www.chemistwarehouse.com.au/buy/84524 -- Done
+https://www.chemistwarehouse.com.au/buy/70004 -- Done
+https://www.chemistwarehouse.com.au/buy/56985 -- Done
+https://www.chemistwarehouse.com.au/buy/70002 -- Done
+https://www.chemistwarehouse.com.au/buy/70001 -- Done
+https://www.chemistwarehouse.com.au/buy/85116 -- Done
+https://www.chemistwarehouse.com.au/buy/74438 -- Done
+https://www.chemistwarehouse.com.au/buy/74437 -- Done
+https://www.chemistwarehouse.com.au/buy/84952 -- Done
+https://www.chemistwarehouse.com.au/buy/85114 -- Done
+https://www.mychemist.com.au/buy/65966 -- Done
+https://www.mychemist.com.au/buy/65967 -- Done
+https://www.mychemist.com.au/buy/65968 -- Done
+https://www.mychemist.com.au/buy/65969 -- Done
+https://www.mychemist.com.au/buy/65964 -- Done
+https://www.mychemist.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/65961 -- Done
+https://www.chemistwarehouse.com.au/buy/65966 -- Done
+https://www.chemistwarehouse.com.au/buy/65967 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65969 -- Done
+https://www.chemistwarehouse.com.au/buy/65960 -- Done
+https://www.chemistwarehouse.com.au/buy/65964 -- Done
+https://www.chemistwarehouse.com.au/buy/65959 -- Done
+https://www.chemistwarehouse.com.au/buy/65958 -- Done
+https://www.chemistwarehouse.com.au/buy/65957 -- Done
+https://www.chemistwarehouse.com.au/buy/65956 -- Done
+https://www.chemistwarehouse.com.au/buy/65955 -- Done
+https://www.chemistwarehouse.com.au/buy/82648 -- Done
+https://www.chemistwarehouse.com.au/buy/82647 -- Done
+https://www.chemistwarehouse.com.au/buy/82646 -- Done
+https://www.chemistwarehouse.com.au/buy/82645 -- Done
+https://www.chemistwarehouse.com.au/buy/84524 -- Done
+https://www.chemistwarehouse.com.au/buy/70004 -- Done
+https://www.chemistwarehouse.com.au/buy/56985 -- Done
+https://www.chemistwarehouse.com.au/buy/70002 -- Done
+https://www.chemistwarehouse.com.au/buy/70001 -- Done
+https://www.chemistwarehouse.com.au/buy/85116 -- Done
+https://www.chemistwarehouse.com.au/buy/74438 -- Done
+https://www.chemistwarehouse.com.au/buy/74437 -- Done
+https://www.chemistwarehouse.com.au/buy/84952 -- Done
+https://www.chemistwarehouse.com.au/buy/85114 -- Done
+https://www.mychemist.com.au/buy/65966 -- Done
+https://www.mychemist.com.au/buy/65967 -- Done
+https://www.mychemist.com.au/buy/65968 -- Done
+https://www.mychemist.com.au/buy/65969 -- Done
+https://www.mychemist.com.au/buy/65964 -- Done
+https://www.mychemist.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/89615 -- Done
