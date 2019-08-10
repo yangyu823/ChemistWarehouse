@@ -63,6 +63,8 @@ Passing URL to get product info and price history
 
 ``http://127.0.0.1:9999/testPost/`` Test Post API(Return ``PostBody``)
 
+``http://127.0.0.1:9999/update/`` (GET)Update database (Return ``UpdateList``)
+
 ***
 
 ### DataBase Structure:
