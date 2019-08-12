@@ -47,7 +47,6 @@
 ``python manage.py runserver 9999``
 Normal Run
 
-
 ``nohup python manage.py runserver 9999 &``
 Run at background
 
@@ -60,8 +59,6 @@ Adding Firebase login with Company
 Passing URL to get product info and price history
 
 ``http://127.0.0.1:9999/testGet/`` Test Get API(Return ``Hello world``)
-
-``http://127.0.0.1:9999/testPost/`` Test Post API(Return ``PostBody``)
 
 ``http://127.0.0.1:9999/update/`` (GET)Update database (Return ``UpdateList``)
 
