@@ -1,0 +1,5 @@
+Watching for file changes with StatReloader
+[15/Aug/2019 23:42:39] "GET /time/ HTTP/1.1" 200 28
+[15/Aug/2019 23:46:15] "GET /update/ HTTP/1.1" 200 1575
+[15/Aug/2019 23:47:57] "GET /update/ HTTP/1.1" 200 392
+[15/Aug/2019 23:49:23] "GET /update/ HTTP/1.1" 200 49
