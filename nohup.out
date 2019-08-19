@@ -52,3 +52,96 @@ https://www.chemistwarehouse.com.au/buy/70001 -- Done
 https://www.chemistwarehouse.com.au/buy/74437 -- Done
 https://www.chemistwarehouse.com.au/buy/89615 -- Done
 https://www.chemistwarehouse.com.au/buy/84524 -- Done
+Watching for file changes with StatReloader
+[16/Aug/2019 23:50:48] "GET /time/ HTTP/1.1" 200 28
+[16/Aug/2019 23:54:25] "GET /update/ HTTP/1.1" 200 1575
+[16/Aug/2019 23:56:05] "GET /update/ HTTP/1.1" 200 245
+[17/Aug/2019 00:06:17] "GET /update/ HTTP/1.1" 200 1575
+[17/Aug/2019 00:06:52] "GET /update/ HTTP/1.1" 200 189
+[17/Aug/2019 00:12:04] "GET /update/ HTTP/1.1" 200 21
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 16, 2019 - 23:50:31
+Django version 2.2.1, using settings 'project.settings'
+Starting development server at http://127.0.0.1:9999/
+Quit the server with CONTROL-C.
+https://www.chemistwarehouse.com.au/buy/65961 -- Done
+https://www.chemistwarehouse.com.au/buy/65966 -- Done
+https://www.chemistwarehouse.com.au/buy/65967 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65969 -- Done
+https://www.chemistwarehouse.com.au/buy/65960 -- Done
+https://www.chemistwarehouse.com.au/buy/65964 -- Done
+https://www.chemistwarehouse.com.au/buy/65959 -- Done
+https://www.chemistwarehouse.com.au/buy/65958 -- Done
+https://www.chemistwarehouse.com.au/buy/65957 -- Done
+https://www.chemistwarehouse.com.au/buy/65956 -- Done
+https://www.chemistwarehouse.com.au/buy/65955 -- Done
+https://www.chemistwarehouse.com.au/buy/82648 -- Done
+https://www.chemistwarehouse.com.au/buy/82647 -- Done
+https://www.chemistwarehouse.com.au/buy/82646 -- Done
+https://www.chemistwarehouse.com.au/buy/82645 -- Done
+https://www.chemistwarehouse.com.au/buy/84524 -- Done
+https://www.chemistwarehouse.com.au/buy/70004 -- Done
+https://www.chemistwarehouse.com.au/buy/56985 -- Done
+https://www.chemistwarehouse.com.au/buy/70002 -- Done
+https://www.chemistwarehouse.com.au/buy/70001 -- Done
+https://www.chemistwarehouse.com.au/buy/85116 -- Done
+https://www.chemistwarehouse.com.au/buy/74438 -- Done
+https://www.chemistwarehouse.com.au/buy/74437 -- Done
+https://www.chemistwarehouse.com.au/buy/84952 -- Done
+https://www.chemistwarehouse.com.au/buy/85114 -- Done
+https://www.mychemist.com.au/buy/65966 -- Done
+https://www.mychemist.com.au/buy/65967 -- Done
+https://www.mychemist.com.au/buy/65968 -- Done
+https://www.mychemist.com.au/buy/65969 -- Done
+https://www.mychemist.com.au/buy/65964 -- Done
+https://www.mychemist.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65969 -- Done
+https://www.chemistwarehouse.com.au/buy/65964 -- Done
+https://www.chemistwarehouse.com.au/buy/65956 -- Done
+https://www.chemistwarehouse.com.au/buy/70001 -- Done
+https://www.chemistwarehouse.com.au/buy/65961 -- Done
+https://www.chemistwarehouse.com.au/buy/65966 -- Done
+https://www.chemistwarehouse.com.au/buy/65967 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65969 -- Done
+https://www.chemistwarehouse.com.au/buy/65960 -- Done
+https://www.chemistwarehouse.com.au/buy/65964 -- Done
+https://www.chemistwarehouse.com.au/buy/65959 -- Done
+https://www.chemistwarehouse.com.au/buy/65958 -- Done
+https://www.chemistwarehouse.com.au/buy/65957 -- Done
+https://www.chemistwarehouse.com.au/buy/65956 -- Done
+https://www.chemistwarehouse.com.au/buy/65955 -- Done
+https://www.chemistwarehouse.com.au/buy/82648 -- Done
+https://www.chemistwarehouse.com.au/buy/82647 -- Done
+https://www.chemistwarehouse.com.au/buy/82646 -- Done
+https://www.chemistwarehouse.com.au/buy/82645 -- Done
+https://www.chemistwarehouse.com.au/buy/84524 -- Done
+https://www.chemistwarehouse.com.au/buy/70004 -- Done
+https://www.chemistwarehouse.com.au/buy/56985 -- Done
+https://www.chemistwarehouse.com.au/buy/70002 -- Done
+https://www.chemistwarehouse.com.au/buy/70001 -- Done
+https://www.chemistwarehouse.com.au/buy/85116 -- Done
+https://www.chemistwarehouse.com.au/buy/74438 -- Done
+https://www.chemistwarehouse.com.au/buy/74437 -- Done
+https://www.chemistwarehouse.com.au/buy/84952 -- Done
+https://www.chemistwarehouse.com.au/buy/85114 -- Done
+https://www.mychemist.com.au/buy/65966 -- Done
+https://www.mychemist.com.au/buy/65967 -- Done
+https://www.mychemist.com.au/buy/65968 -- Done
+https://www.mychemist.com.au/buy/65969 -- Done
+https://www.mychemist.com.au/buy/65964 -- Done
+https://www.mychemist.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/89615 -- Done
+https://www.chemistwarehouse.com.au/buy/65968 -- Done
+https://www.chemistwarehouse.com.au/buy/65957 -- Done
+https://www.chemistwarehouse.com.au/buy/56985 -- Done
+https://www.mychemist.com.au/buy/89615 -- Done
+Watching for file changes with StatReloader
+[19/Aug/2019 13:27:53] "GET /update/ HTTP/1.1" 200 1575
+[19/Aug/2019 13:38:29] "GET /update/ HTTP/1.1" 200 350
+[19/Aug/2019 13:49:56] "GET /update/ HTTP/1.1" 200 21
