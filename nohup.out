@@ -193,3 +193,7 @@ https://www.mychemist.com.au/buy/65968 -- Done
 https://www.mychemist.com.au/buy/65969 -- Done
 https://www.mychemist.com.au/buy/65964 -- Done
 https://www.mychemist.com.au/buy/89615 -- Done
+Watching for file changes with StatReloader
+[27/Aug/2019 10:38:25] "GET /time/ HTTP/1.1" 200 28
+[27/Aug/2019 10:42:31] "GET /update/ HTTP/1.1" 200 1575
+[27/Aug/2019 11:57:09] "GET /update/ HTTP/1.1" 200 21
